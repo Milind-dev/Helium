@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+<style>
+    .help__resouces{
+        border: 1px solid coral;
+        text-align: center;
+    }
+    .help__resource{
+        color: #f36c00;
+        font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+;
+    }
+    .help__resouce__team{
+        font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 32px;
+    }
+   
+    .help__resouceBrowseguide{
+      border: 1px solid coral;
+      width: 170px;
+      height: 6vh;
+      background-color: whitesmoke;
+      border-radius: 15px;
+      color: grey;
+      letter-spacing: 0.2em;
+    }
+    .help__resouce_BrowseguideBtn{
+        color: orange;
+        border-radius: 15px;
+        color: white;
+    }
+    .help__resouce_BrowseguideBtn:hover{
+        border:2px solid  red;
+        color: red;
+
+    }
+    .help_resourcecatdolbox{
+        display: flex;
+        flex:1;
+        padding: 12px;
+        margin: 12px
+    }
+    /* .help_resourceCatdolbox{
+        position: absolute;
+        content: "";
+        width: 120px;
+
+    } */
+    .help__resourcecatdolimg{
+        width: 120px;
+    }
+    .help__resourcetrial{
+        background-color: #f6f6f6;
+        border: 1px solid coral;
+        width: auto;
+        height: 90vh;
+        color: grey;
+        padding: 5px ;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .help__resourceTrialInpBtn{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .help__resourcetrial__inpBtn > input{
+        width: 220px;
+        height: 5vh;
+        padding-left: 12px;
+        margin: 12px;
+        border-radius: 10px;
+    }
+    .help__resourcetrial__inpBtn > .help__resourcetrial__start{
+        width: 220px;
+        height: 6vh;
+        margin-top: 12px;
+        background-color: green;
+        color: white;
+        font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        border-radius: 10px;
+        /* box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        /* color: #fff; */
+        /* -webkit-transition: all 0.2s; */
+        /* transition: all 0.2s;  */
+    }
+    .help__resourcetrial__inpbtngoogle{
+        background-color: #f6f6f6;
+        border: hidden;
+        color: grey;
+        font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding: 12px;
+    }
+    .help__resourcesiteimg{
+        width: 900px;
+    }
+    .help__resource__trialheader > h1 {
+        font-weight: bold;
+        color: #5e4b45;
+        font-size: 42px;
+    }
+    .help__resource__trialheader > p {
+        font-size: 20px;;
+    }
+</style>
+
 <body>
+    <hr>
+    <div id="resources">
+        <div class="help__resouces">
+            <h1>HELPFUL  <span class="help__resource">RESOURCES<span></h1>
+            <p class="help__resouce__team">Make the most of your team's</p>
+            <a class="help__resouce_BrowseguideBtn" href="#"><input type="button" class="help__resouceBrowseguide" value = "Browse the guides" /></a> 
+            <span> <i class="fa fa-forward" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="help_resourcecatdolbox">
+            <div>
+                <img class="help__resourcecatdolimg" src="./img/pussycat.png"/>
+            </div>
+            <div>
+                <img  class="help__resourcecatdolimg" src="./img/dollar.png"/>
+            </div>
+        </div>
+        <hr>
+        <!--end cat -->
+
+        <div class="help__resourcetrial">
+            <div class="help__resource__trialheader">
+                <h1>Go ahead. Kick the tires.</h1>
+                <p> See if Harvest is right for your business with a free, fully functional 30-day trial. </p>
+                <div class="help__resourcetrial__inpBtn">
+                    <input type="text" placeholder="Your Working Email" />
+                    <button class="help__resourcetrial__start"> Start Your Free Trial </button>
+                </div>
+                <div class="help__resourcetrial__inpBtn">
+                    <button class="help__resourcetrial__inpbtngoogle"><span> <i class="fa fa-google" aria-hidden="true"></i>
+                    </span> Or Sign up with your Google Account <i class="fa fa-forward" aria-hidden="true"></i></span></button>
+                </div>
+                <img class="help__resourcesiteimg" src="./img//siteImg.png" />
+            </div>
+        </div> 
+        <!--  -->
+
+
+    </div>
     
 </body>
+
 </html>
