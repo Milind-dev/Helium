@@ -127,7 +127,7 @@ header {
     width: 100%;
     padding: 0 15%;
     margin-top: 15vh;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #555;
 }
 
 .trail__top {
@@ -186,7 +186,8 @@ header {
     width: 400px;
 }
 
-.trail__top__right button {
+.trail__top__right button,
+.reviews>button {
     padding: 10px 15px;
     font-size: 16px;
     color: #555;
@@ -197,7 +198,8 @@ header {
     transition: all 0.2s ease;
 }
 
-.trail__top__right button .fa {
+.trail__top__right button .fa,
+.reviews button a .fa {
     margin-left: 10px;
     font-weight: 200;
     transform: scaleX(1.5);
@@ -206,11 +208,12 @@ header {
 .trail__bottom {
     width: 100%;
     margin-bottom: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
-.trail__bottom h1 {
+.trail__bottom h1,
+.reviews h1 {
     font-size: 35px;
     font-weight: 600;
     color: #444;
@@ -264,6 +267,110 @@ header {
 }
 
 
+/* Custome reviews */
+.reviews {
+    width: 100%;
+    padding: 0 15%;
+    margin-top: 80px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.reviews h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #555;
+    margin: 5px 0;
+}
+
+.reviews h3 span {
+    color: #F36C00;
+}
+
+.reviews h1 {
+    margin-bottom: 70px;
+}
+
+.reviews__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.reviews__cards__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-grow: 1;
+    width: 330px;
+    height: 400px;
+    padding: 15px;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.reviews__cards__item svg {
+    margin: 2px;
+    margin-bottom: 10px;
+}
+
+.reviews__cards__item button {
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+}
+
+.reviews__cards__item--crimson {
+    background-color: #CB5C5B;
+}
+
+.reviews__cards__item--skyblue {
+    background-color: #3D9DC1;
+}
+
+.reviews__cards__item--teal {
+    background-color: #21A5A0;
+}
+
+.reviews__cards__item p {
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.reviews__logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reviews__logos img {
+    width: 80px;
+    opacity: 0.3;
+    margin: 15px 15px;
+}
+
+.reviews button {
+    margin-bottom: 70px;
+}
+
+.reviews>button a {
+    text-decoration: none;
+    color: #555;
+}
+
 
 
 
@@ -290,8 +397,13 @@ header {
     box-shadow: 0 0 5px gray;
 }
 
-.trail__top__right button:hover {
+.trail__top__right button:hover,
+.reviews>button:hover {
     border: 2px solid #F36C00;
+    color: #F36C00;
+}
+
+.reviews>button:hover a {
     color: #F36C00;
 }
 
@@ -299,6 +411,9 @@ header {
     transform: translateX(5px);
 }
 
+.reviews__cards__item:hover {
+    box-shadow: 0 0 5px gray;
+}
 
 
 /* Media queries */
