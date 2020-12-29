@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+
+/* Navigation bar */
+header {
+    position: relative;
+}
+
+.nav__bar {
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    min-height: 15vh;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F6F6F6;
+    transition: all 0.2s ease;
+}
+
+.nav__bar__logo {
+    flex: 1 1 20%;
+}
+
+.nav__bar__logo a {
+    text-decoration: none;
+}
+
+.nav__bar__logo a h1 {
+    color: #F36C00;
+    font-size: 26px;
+    letter-spacing: 2px;
+    transform: scaleY(1.4);
+}
+
+.nav__bar__links {
+    min-width: 30%;
+    flex: 1 2 40%;
+    display: block;
+}
+
+.nav__bar__links ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.nav__bar__links ul li {
+    margin: 5px 0;
+}
+
+.nav__bar__links ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+
+}
+
+.nav__bar__actions {
+    flex: 1 1 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    display: block;
+}
+
+.nav__bar__actions .nav__bar__actions__signIn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+    margin-right: 15px;
+    padding: 10px;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.nav__bar__actions .nav__bar__actions__signUp {
+    background-color: #28a711;
+    font-size: 16px;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.nav__bar .nav__bar__burger__menu {
+    min-width: 90px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.219);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+
+.nav__bar__links ul li a:hover,
+.nav__bar__actions__signIn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.nav__bar__actions__signUp:hover {
+    background-color: #289116;
+}
+
+
+
+/* Media queries */
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    .nav__bar .nav__bar__burger__menu {
+        display: block;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__bar__links,
+    .nav__bar__actions {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width:767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .nav__bar__actions .nav__bar__actions__signIn,
+    .nav__bar__actions .nav__bar__actions__signUp,
+    .nav__bar__actions ul li a {
+        font-size: 14px;
+    }
+}
