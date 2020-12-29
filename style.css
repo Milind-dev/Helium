@@ -28,6 +28,7 @@ header {
     flex-wrap: wrap;
     background-color: #F6F6F6;
     transition: all 0.2s ease;
+    z-index: 1;
 }
 
 .nav__bar__logo {
@@ -73,14 +74,11 @@ header {
 
 }
 
-.nav__bar__actions {
+.nav__bar .nav__bar__actions {
     flex: 1 1 20%;
-    /* border: 1px solid red; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin-left: 25px;
-    display: block;
 }
 
 .nav__bar__actions .nav__bar__actions__signIn {
@@ -119,6 +117,153 @@ header {
 }
 
 
+/* Trail section */
+.trail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+    width: 100%;
+    padding: 0 15%;
+    margin-top: 15vh;
+    border-bottom: 1px solid #444;
+}
+
+.trail__top {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.trail__top__left {
+    flex: 1 1 30%;
+    background-color: #F36C00;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.trail__top__left .fa {
+    padding: 5px 12px;
+    /* height: 15px; */
+    font-size: 40px;
+    background-color: #e6802d;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.trail__top__right {
+    flex: 1 1 30%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0.5px 0.5px 5px gray;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.trail__top__right img {
+    width: 400px;
+}
+
+.trail__top__right button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #555;
+    background: none;
+    border: 2px solid #c9c9c9;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.trail__top__right button .fa {
+    margin-left: 10px;
+    font-weight: 200;
+    transform: scaleX(1.5);
+}
+
+.trail__bottom {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.trail__bottom h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.trail__bottom p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.trail__bottom .trail__bottom__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.trail__bottom__input input {
+    width: 350px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #c9c9c9;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.trail__bottom__input button {
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a711;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.trail__bottom>a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.2s ease;
+}
+
+.trail__bottom a .fa-google {
+    color: #F36C00;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid #555;
+}
+
+
 
 
 
@@ -136,8 +281,22 @@ header {
     transition: all 0.2s ease;
 }
 
-.nav__bar__actions__signUp:hover {
+.nav__bar__actions__signUp:hover,
+.trail__bottom__input button:hover {
     background-color: #289116;
+}
+
+.trail__top__left .fa:hover {
+    box-shadow: 0 0 5px gray;
+}
+
+.trail__top__right button:hover {
+    border: 2px solid #F36C00;
+    color: #F36C00;
+}
+
+.trail__bottom a:hover .fa-arrow-right {
+    transform: translateX(5px);
 }
 
 
