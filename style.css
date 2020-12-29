@@ -28,7 +28,7 @@ header {
     flex-wrap: wrap;
     background-color: #F6F6F6;
     transition: all 0.2s ease;
-    z-index: 1;
+    z-index: 100;
 }
 
 .nav__bar__logo {
@@ -200,7 +200,8 @@ header {
 }
 
 .trail__top__right button,
-.reviews>button {
+.reviews>button,
+.resources__content button {
     padding: 10px 15px;
     font-size: 16px;
     color: #555;
@@ -226,7 +227,8 @@ header {
 }
 
 .trail__bottom h1,
-.reviews h1 {
+.reviews h1,
+.resources__content h1 {
     font-size: 35px;
     font-weight: 600;
     color: #444;
@@ -289,18 +291,21 @@ header {
     border-bottom: 1px solid #555;
 }
 
-.reviews h3 {
+.reviews h3,
+.resources__content h3 {
     font-size: 22px;
     font-weight: 500;
     color: #555;
     margin: 5px 0;
 }
 
-.reviews h3 span {
+.reviews h3 span,
+.resources__content h3 span {
     color: #F36C00;
 }
 
-.reviews h1 {
+.reviews h1,
+.resources__content h1 {
     margin-bottom: 70px;
 }
 
@@ -513,7 +518,6 @@ header {
     height: 90vh;
     color: grey;
     padding: 5px;
-    margin-top: 50px;
     text-align: center;
 }
 
@@ -560,7 +564,6 @@ header {
 
 .help__resource__trialheader>p {
     font-size: 20px;
-    ;
 }
 
 .help__resource__footer {
@@ -773,7 +776,7 @@ header {
     height: 90vh;
     color: grey;
     padding: 5px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     text-align: center;
 }
 
@@ -916,9 +919,85 @@ header {
     bottom: 1px;
 }
 
+/* Resources section */
+.resources {
+    margin-top: 150px;
+    position: relative;
+    overflow: hidden;
+}
 
+.resources__content {
+    text-align: center;
+}
 
+.resources__content h1 {
+    margin-bottom: 15px;
+}
 
+.resources__content button {
+    margin-top: 0;
+    margin-bottom: 340px;
+}
+
+.resources__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    bottom: -12%;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+.resources__card__item {
+    width: 250px;
+    height: 350px;
+    padding: 20px 25px;
+    color: rgba(0, 0, 0, 0.541);
+    background-color: #3D9DC1;
+    text-align: center;
+    margin: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.resources__card__item p {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.resources__card__item img {
+    width: 210px;
+    height: 210px;
+}
+
+.resources__card__item--teal {
+    transform: rotateZ(-12deg) translateX(80px);
+    transform-origin: bottom left;
+    position: absolute;
+    left: 23%;
+    bottom: -28%;
+    background-color: #21A5A0;
+}
+
+.resources__card__item--orange {
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translate(-50%);
+    background-color: #F18D2A;
+    z-index: 1;
+}
+
+.resources__card__item--crimson {
+    transform: rotateZ(12deg) translateX(-80px);
+    transform-origin: bottom right;
+    position: absolute;
+    right: 21%;
+    bottom: -28%;
+    background-color: #CB5C5B;
+}
 
 
 
@@ -941,6 +1020,7 @@ header {
 }
 
 .trail__top__right button:hover,
+.resources__content button:hover,
 .reviews>button:hover {
     border: 2px solid #F36C00;
     color: #F36C00;
@@ -958,7 +1038,18 @@ header {
     box-shadow: 0 0 5px gray;
 }
 
+.resources__card__item--teal:hover {
+    transform: rotateZ(-12deg) translateX(80px) translateY(-10px);
+}
 
+.resources__card__item--orange:hover {
+    transform: translate(-50%) translateY(-10px);
+}
+
+.resources__card__item--crimson:hover {
+    transform: rotateZ(12deg) translateX(-80px) translateY(-10px);
+    transform-origin: bottom right;
+}
 
 /* Media queries */
 
