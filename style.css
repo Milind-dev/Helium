@@ -126,7 +126,7 @@ header {
     background-color: #F6F6F6;
     width: 100%;
     padding: 0 15%;
-    margin-top: 15vh;
+    margin-top: 12vh;
     border-bottom: 1px solid #555;
 }
 
@@ -380,11 +380,9 @@ header {
 
 .help__resource {
     color: #f36c00;
-    font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .help__resouce__team {
-    font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 32px;
 }
 
@@ -393,24 +391,26 @@ header {
     color: coral;
     border-radius: 15px;
     /* text-decoration: none; */
+
     border: 1px solid whitesmoke
 }
 
 .help__resoucebrowseguide {
     border: 1px solid grey;
     width: 230px;
-    height: 6vh;
     background-color: whitesmoke;
     border-radius: 15px;
     color: grey;
     letter-spacing: 0.2em;
     text-decoration: none;
+    padding: 15px 20px;
+    margin: 20px 0;
 }
 
 .help__resoucebrowseguide:hover {
     border: 1px solid orange;
     color: orange;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     text-decoration: none;
 }
 
@@ -528,7 +528,6 @@ header {
     margin-top: 12px;
     background-color: #4eaa12;
     color: white;
-    font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
     border-radius: 10px;
 }
 
@@ -536,23 +535,30 @@ header {
     background-color: #f6f6f6;
     border: hidden;
     color: grey;
-    font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 12px;
 }
 
 .help__resourcesiteimg {
     width: 900px;
+    position: absolute;
+    bottom: -200%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.help__resource__trialheader {
+    position: relative;
 }
 
 .help__resource__trialheader>h1 {
     font-weight: bold;
     color: #5e4b45;
     font-size: 42px;
+    margin-top: 100px;
 }
 
 .help__resource__trialheader>p {
     font-size: 20px;
-    ;
 }
 
 .help__resource__footer {
@@ -579,6 +585,7 @@ header {
     height: auto;
     border: hidden;
     display: flex;
+    padding: 15px;
     box-shadow: 3px 3px 3px 3px black;
 }
 
@@ -588,7 +595,11 @@ header {
 
 .help__resource_createleader {
     /* border: 1px solid coral; */
-    width: 222vh;
+    /* width: 222vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 70vh;
     padding-top: 112px;
 }
@@ -601,8 +612,10 @@ header {
 
 .help__resource_allsnap {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
-    margin: 0px 232px;
+    margin-bottom: 30px;
 }
 
 .help__resource_snappic>.help__resource__leaderimg {
@@ -611,16 +624,15 @@ header {
 
 .help__resource__time {
     color: #f36c00;
-    font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
     /* width: 12px; */
     text-align: center;
     font-size: 24px;
 }
 
 .help__resource_createleader>.help__resource__counttimer {
-    font-family: "Brandon Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 32px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .help__resource__readreview {
