@@ -307,7 +307,6 @@ header {
     width: 330px;
     height: 400px;
     padding: 15px;
-    background-color: black;
     font-size: 16px;
     color: white;
     text-align: left;
@@ -362,7 +361,7 @@ header {
     margin: 15px 15px;
 }
 
-.reviews button {
+.reviews>button {
     margin-bottom: 70px;
 }
 
@@ -428,11 +427,9 @@ header {
     }
 
     .nav__bar__links,
-    .nav__bar__actions {
+    .nav__bar .nav__bar__actions {
         display: none;
     }
-
-
 }
 
 
