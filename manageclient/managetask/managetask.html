@@ -13,202 +13,234 @@
     <link rel="stylesheet" href="./reportsstyle/reports.css" />
 </head>
 <style>
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-​body {
-    font-family: 'Poppins', sans-serif;
-}
+    ​body {
+        font-family: 'Poppins', sans-serif;
+    }
 
-#manageclient__containers {
-    background-color: #f4f4f4;
-}
-
-
+    #manageclient__containers {
+        background-color: #f4f4f4;
+    }
 
 
-.managetask__sections_trackcreateproject {
-    padding: 12px;
-    border: 1px solid grey;
-    width: 100vh;
-    height: 55vh;
-    margin: 10px 220px;
-    color: #c1c1c1;
-    font-size: 20px;
-    line-height: 1.2em;
-    border-radius: 10px;
-}
 
-.managetask_commontasks{
-        color:#333333;
-        font-size: 17px;
+
+    .managetask__sections_trackcreateproject {
+        padding: 12px;
+        border: 1px solid grey;
+        width: 100vh;
+        height: 55vh;
+        margin: 10px 220px;
+        color: #c1c1c1;
+        font-size: 20px;
+        line-height: 1.2em;
+        border-radius: 10px;
+    }
+
+    .managetask_commontasks {
+        color: #333333;
+        font-size: 21px;
         font-weight: bold;
-        border-bottom: 1px solid coral;
-}
-.managetask_commontask > p{
-        border-bottom:1px solid coral
-}
-.managetask_commontask > p + p{
-        color:#918a88;
+    }
+
+
+    .managetask_commontask>p+p {
+        color: #918a88;
         font-size: 14px;
+        font-weight: italic;
+    }
+
+    .managetask_defaulthr {
+        display: flex;
+        flex: 1;
+        color: grey;
+        font-size: 12px;
+        justify-content: space-evenly;
+    }
+
+    .managetasks_projectstime {
+        display: flex;
+        flex: 1;
+        color: #918a88;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .managetasks__projects {
+        display: flex;
+        flex: 1;
+        padding: 2px;
+    }
+
+    .managetask__editions {
+        color: grey;
+        font-size: 12px;
+        margin: 6px;
+    }
+
+    .managetask__editions_p {
+        color: #918a88;
+        font-size: 14px;
+        font-weight: italic;
+    }
+
+    .managetask__sections_trialupgrade {
+        height: 60px;
+        background-color: #f9f9f9;
+        color: whitesmoke;
+        font-size: 12px;
+    }
+
+    .managetask__sections_trialleft {
+        display: flex;
+        flex: 1;
+        padding: 32px 3px;
+        margin: 120px;
+        text-align: center;
+        border: 1px solid white;
+    }
+
+    .managetask__sections_trialleft>button {
+        text-align: center;
+        border: 2px solid grey;
+        border-radius: 5px;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        color: #666666;
         font-weight: bold;
-}
+        font-size: 14px;
+        margin-left: 12px;
+        cursor: all-scroll;
+        background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4);
+    }
 
+    .managetask__sections_trialleft>p {
+        text-align: center;
+        text-align: center;
+        margin-top: 7px;
+        color: grey;
+        font-size: 14px;
+    }
 
+    .managetask__sections_trialleft>p>span {
+        color: darkgrey;
+    }
 
+    .managetask__sections_privacyterms {
+        margin-left: 53vh;
+        padding: 2px;
+        margin-top: -10px;
+    }
 
-.managetask__sections_trialupgrade {
-    height: 60px;
-    background-color: #f9f9f9;
-    color: whitesmoke;
-    font-size: 12px;
-}
+    .managetask__sections_privacyterms>.managetask__sections_privacylinks {
+        color: grey;
+        text-decoration: none;
+        padding-left: 11px;
+        font-size: 15px;
+    }
 
-.managetask__sections_trialleft {
-    display: flex;
-    flex: 1;
-    padding: 32px 3px;
-    margin: 120px;
-    text-align: center;
-    border: 1px solid white;
-}
+    .managetask__sections_privacylinks:hover {
+        color: lightgrey;
+    }
 
-.managetask__sections_trialleft>button {
-    text-align: center;
-    border: 2px solid grey;
-    border-radius: 5px;
-    text-align: center;
-    width: 100px;
-    height: 30px;
-    color: #666666;
-    font-weight: bold;
-    font-size: 14px;
-    margin-left: 12px;
-    cursor: all-scroll;
-    background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4);
-}
+    #managetask_harvesting {
+        color: lightgrey;
+        font-size: 33px;
+    }
 
-.managetask__sections_trialleft>p {
-    text-align: center;
-    text-align: center;
-    margin-top: 7px;
-    color: grey;
-    font-size: 14px;
-}
+    #managetask_harvesting:hover {
+        color: grey;
+        font-size: 33px;
+    }
 
-.managetask__sections_trialleft>p>span {
-    color: darkgrey;
-}
+    .managetask__details {
+        color: grey;
+        padding: 12px;
+        width: 100%;
+        height: 5vh;
+        background-color: #eeeeee;
+    }
 
-.managetask__sections_privacyterms {
-    margin-left: 53vh;
-    padding: 2px;
-    margin-top: -10px;
-}
+    .managetask__details__invoices {
+        display: flex;
+        flex: 1;
+        margin-left: 100px;
+    }
 
-.managetask__sections_privacyterms>.managetask__sections_privacylinks {
-    color: grey;
-    text-decoration: none;
-    padding-left: 11px;
-    font-size: 15px;
-}
+    .managetask__details__invoices>a {
+        text-decoration: none;
+        color: grey;
+        padding: 12px;
+    }
 
-.managetask__sections_privacylinks:hover {
-    color: lightgrey;
-}
+    .managetask__details__invoices>a:hover {
+        color: grey;
+        border-bottom: 2px solid orange;
+    }
 
-#managetask_harvesting {
-    color: lightgrey;
-    font-size: 33px;
-}
+    .managetask__details__invoices>a>span {
+        color: black;
+    }
 
-#managetask_harvesting:hover {
-    color: grey;
-    font-size: 33px;
-}
+    .managetask__details__invoices>a>span:hover {
+        color: orange;
+    }
 
-.managetask__details {
-    color: grey;
-    padding: 12px;
-    width: 100%;
-    height: 5vh;
-    background-color: #eeeeee;
-}
+    .managetask__btn {
+        margin: 40px 198px
+    }
 
-.managetask__details__invoices {
-    display: flex;
-    flex: 1;
-    margin-left: 100px;
-}
+    .managetask__btn>h1 {
+        color: #333333;
+        font-size: 26px;
+        margin-left: 10px;
+    }
 
-.managetask__details__invoices>a {
-    text-decoration: none;
-    color: grey;
-    padding: 12px;
-}
-.managetask__details__invoices>a:hover {
-    color: grey;
-    border-bottom: 2px solid orange;
-}
+    .managetask__btn>h1+button {
+        text-align: center;
+        border: 2px solid wheat;
+        text-align: center;
+        margin: 10px 10px;
+        width: 140px;
+        height: 40px;
+        border-radius: 8px;
+        color: whitesmoke;
+        background: linear-gradient(#4fb840, #14a000);
+        font-size: 15px;
+        cursor: pointer;
+    }
 
-.managetask__details__invoices>a>span {
-    color: black;
-}
+    .managetask__btn>h1+button+select {
+        text-align: center;
+        border: 2px solid whitesmoke;
+        text-align: center;
+        margin: 10px 10px;
+        width: 140px;
+        height: 40px;
+        border-radius: 6px;
+        box-shadow: 2px;
+        font-size: 15px;
+        font-weight: bold;
+        color: grey;
+        cursor: pointer;
+    }
 
-.managetask__details__invoices>a>span:hover {
-    color: orange;
-}
+    .managetask__impexports {
+        border: 3px solid whitesmoke;
+        box-shadow: 5px;
+    }
 
-.managetask__btn{
-    margin: 40px 198px
-}
-
-.managetask__btn>h1{
-    color: #333333;
-    font-size: 26px;
-    margin-left: 10px;
-}
-.managetask__btn>h1+button {
-    text-align: center;
-    border: 2px solid wheat;
-    text-align: center;
-    margin: 10px 10px;
-    width: 140px;
-    height: 40px;
-    border-radius: 8px;
-    color: whitesmoke;
-    background: linear-gradient(#4fb840, #14a000);
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.managetask__btn>h1+button +select{
-    text-align: center;
-    border: 2px solid whitesmoke;
-    text-align: center;
-    margin: 10px 10px;
-    width: 140px;
-    height: 40px;
-    border-radius: 6px;
-    box-shadow: 2px;
-    font-size: 15px;
-    font-weight: bold;
-    color: grey;
-    cursor: pointer;
-}
-.managetask__impexports{
-    border: 3px solid whitesmoke;
-    box-shadow: 5px;
-}
-.managetask__btn>h1+button :hover {
-    color: grey;
-}
-
-
+    .managetask__btn>h1+button :hover {
+        color: grey;
+    }
 </style>
+
 <body>
     <div id="manageclient__containers">
         <div class="reports__sections">
@@ -233,18 +265,51 @@
                     <option class="managetask__impexports" value="first">Export Excel</option>
                 </select>
             </div>
-            
-            
-            
+
+
+
             <div class="managetask__sections_trackcreateproject">
                 <div class="managetask_commontasks">
+
                     <div class="managetask_commontask">
                         <p>common Tasks</p>
                         <p>These tasks are automatically added to all new projects </p>
+                        <hr>
                     </div>
-                    <div>
-                        
+                    <div class="managetask_defaulthr">
+                        <p>Task</p>
+                        <p> Default Hourly Rate</p>
                     </div>
+                    <hr>
+
+                    <div class="managetasks__projects">
+                        <div class="managetasks_projectstime">
+                            <div>
+                                <button id="managetask__projectedition" class="managetask__editions">Edit</p>
+                            </div>
+                            <div>
+                                <p class="managetask__editions managetask__editions_p">Design</p>
+                            </div>
+                            <div>
+                                <button class="managetask__editions">Billable</button>
+                            </div>
+                        </div>
+
+                        <div class="managetasks_projectstime">
+                            <div>
+                                <p id="managetask__rupees" class="managetask__editions managetask__editions_p">Rs</p>
+                            </div>
+                            <div>
+                                <button id="managetask__archive" class="managetask__editions">Archive</button>
+                            </div>
+                            <div>
+                                <button id="managetask__delete" class="managetask__editions">Delete</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+
                 </div>
             </div>
 
@@ -262,6 +327,10 @@
                 </div>
             </div>
 
-</body>
+            <script>
+                
+            </script>
+
+        </body>
 
 </html>
