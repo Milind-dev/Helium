@@ -1,0 +1,267 @@
+<!-- Expenses -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Task</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./reportsstyle/reports.css" />
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+​body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#manageclient__containers {
+    background-color: #f4f4f4;
+}
+
+
+
+
+.managetask__sections_trackcreateproject {
+    padding: 12px;
+    border: 1px solid grey;
+    width: 100vh;
+    height: 55vh;
+    margin: 10px 220px;
+    color: #c1c1c1;
+    font-size: 20px;
+    line-height: 1.2em;
+    border-radius: 10px;
+}
+
+.managetask_commontasks{
+        color:#333333;
+        font-size: 17px;
+        font-weight: bold;
+        border-bottom: 1px solid coral;
+}
+.managetask_commontask > p{
+        border-bottom:1px solid coral
+}
+.managetask_commontask > p + p{
+        color:#918a88;
+        font-size: 14px;
+        font-weight: bold;
+}
+
+
+
+
+.managetask__sections_trialupgrade {
+    height: 60px;
+    background-color: #f9f9f9;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+.managetask__sections_trialleft {
+    display: flex;
+    flex: 1;
+    padding: 32px 3px;
+    margin: 120px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.managetask__sections_trialleft>button {
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 12px;
+    cursor: all-scroll;
+    background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4);
+}
+
+.managetask__sections_trialleft>p {
+    text-align: center;
+    text-align: center;
+    margin-top: 7px;
+    color: grey;
+    font-size: 14px;
+}
+
+.managetask__sections_trialleft>p>span {
+    color: darkgrey;
+}
+
+.managetask__sections_privacyterms {
+    margin-left: 53vh;
+    padding: 2px;
+    margin-top: -10px;
+}
+
+.managetask__sections_privacyterms>.managetask__sections_privacylinks {
+    color: grey;
+    text-decoration: none;
+    padding-left: 11px;
+    font-size: 15px;
+}
+
+.managetask__sections_privacylinks:hover {
+    color: lightgrey;
+}
+
+#managetask_harvesting {
+    color: lightgrey;
+    font-size: 33px;
+}
+
+#managetask_harvesting:hover {
+    color: grey;
+    font-size: 33px;
+}
+
+.managetask__details {
+    color: grey;
+    padding: 12px;
+    width: 100%;
+    height: 5vh;
+    background-color: #eeeeee;
+}
+
+.managetask__details__invoices {
+    display: flex;
+    flex: 1;
+    margin-left: 100px;
+}
+
+.managetask__details__invoices>a {
+    text-decoration: none;
+    color: grey;
+    padding: 12px;
+}
+.managetask__details__invoices>a:hover {
+    color: grey;
+    border-bottom: 2px solid orange;
+}
+
+.managetask__details__invoices>a>span {
+    color: black;
+}
+
+.managetask__details__invoices>a>span:hover {
+    color: orange;
+}
+
+.managetask__btn{
+    margin: 40px 198px
+}
+
+.managetask__btn>h1{
+    color: #333333;
+    font-size: 26px;
+    margin-left: 10px;
+}
+.managetask__btn>h1+button {
+    text-align: center;
+    border: 2px solid wheat;
+    text-align: center;
+    margin: 10px 10px;
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    color: whitesmoke;
+    background: linear-gradient(#4fb840, #14a000);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.managetask__btn>h1+button +select{
+    text-align: center;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    margin: 10px 10px;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    cursor: pointer;
+}
+.managetask__impexports{
+    border: 3px solid whitesmoke;
+    box-shadow: 5px;
+}
+.managetask__btn>h1+button :hover {
+    color: grey;
+}
+
+
+</style>
+<body>
+    <div id="manageclient__containers">
+        <div class="reports__sections">
+            <div class="managetask__details">
+                <div class="managetask__details__invoices">
+                    <a href="#"><span><strong>Client</strong></span> </a>
+                    <a href="#"> Task </a>
+                    <a href="#"> Expense Categories </a>
+                    <a href="#"> Roles </a>
+                </div>
+
+            </div>
+            <!-- <hr style="margin: 32px;width: 1100px;"> -->
+            <div class="managetask__btn">
+                <h1> Manage Task </h1>
+                <button class="managetask__sections_managebutton">+ New Client</button>
+                <select class="managetask__impexp managetask__impexports ">
+                    <option class="managetask__impexports" value="first">Import CSV</option>
+                    <option class="managetask__impexports" value="first">Import CSV</option>
+                    <option class="managetask__impexports" value="first">Export Excel</option>
+                    <option class="managetask__impexports" value="first">Export CSV</option>
+                    <option class="managetask__impexports" value="first">Export Excel</option>
+                </select>
+            </div>
+            
+            
+            
+            <div class="managetask__sections_trackcreateproject">
+                <div class="managetask_commontasks">
+                    <div class="managetask_commontask">
+                        <p>common Tasks</p>
+                        <p>These tasks are automatically added to all new projects </p>
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="managetask__sections_trialupgrade">
+                <div class="managetask__sections_trialleft">
+                    <p> <span> 29 days </span> left in your free trial </p>
+                    <button>upgrade</button>
+                    <div class="managetask__sections_privacyterms">
+                        <a class="managetask__sections_privacylinks" href="#">Privacy</a>
+                        <a class="managetask__sections_privacylinks" href="#">Terms</a>
+                        <a class="managetask__sections_privacylinks" id="managetask_harvesting" href="#">Harvest</a>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>
