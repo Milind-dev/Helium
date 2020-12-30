@@ -2,10 +2,10 @@ body {
     background-color: #eee;
     font-family: 'Poppins',
         sans-serif;
-
 }
 
-.container {
+
+.container{
     width: 370px;
     background-color: #ffffff;
     background-clip: padding-box;
@@ -17,8 +17,7 @@ body {
     padding: 30px;
     position: relative;
     text-align: left;
-    vertical-align: top;
-
+    vertical-align: top;  
 }
 
 h1 {
@@ -33,7 +32,8 @@ h1 {
 }
 
 
-.google__button {
+
+.google__button{
     border: 1px solid grey;
     height: 35px;
     width: 97%;
@@ -51,7 +51,7 @@ h1 {
     background-color: rgb(235, 232, 232);
 }
 
-.left__line {
+.left__line{
     width: 45%;
     height: 0.5px;
     background-color: lightgrey;
@@ -65,28 +65,30 @@ h1 {
     margin-top: 30px;
 }
 
-.right__line {
+
+.right__line{
     width: 45%;
     height: 0.5px;
     background-color: lightgrey;
     margin-left: 55%;
 }
 
-#harvest__email {
+
+#harvest__email{
     height: 30px;
     width: 95%;
     margin: 40px 5px 5px;
     padding-left: 2%;
 }
 
-#harvest__password {
+#harvest__password{
     height: 30px;
     width: 95%;
-    margin: 5px 5px;
+    margin: 5px 5px ;
     padding-left: 2%;
 }
 
-.signin__button {
+.signin__button{
     display: block;
     height: 38px;
     width: 99%;
@@ -101,14 +103,14 @@ h1 {
     font-size: 15px;
 }
 
-.signin__button>a {
+
+.signin__button > a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.forgotpassword__links {
-    /* width: 100%; */
-    /* margin: auto; */
+
+.forgotpassword__links{
     text-align: right;
     font-size: 12px;
     cursor: pointer;
@@ -121,7 +123,8 @@ h1 {
     font-size: 13px;
 }
 
-.harvest__links>a {
+
+.harvest__links > a {
     color: rgb(146, 143, 143);
 }
 
@@ -133,6 +136,6 @@ h1 {
     font-size: 13px;
 }
 
-.privacy__link>a {
+.privacy__link > a {
     color: rgb(146, 143, 143);
 }

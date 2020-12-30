@@ -1,56 +1,60 @@
-body {
+body{
     font-family: 'Poppins',
         sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.orange__box {
-    border: 1px;
+.orange__box{
+    border: 1px ;
     height: 230px;
     background-color: #F36C00;
 }
 
-.top__box {
-    border: 1px;
+.top__box{
+    border: 1px ;
     display: flex;
     flex-direction: row;
     color: #ffffff;
-
+    
 }
 
-.harvest__heading {
+.harvest__heading{
     font-size: 37px;
     margin-left: 25%;
     margin-top: 10px;
 }
 
-.alredy__signin {
+
+.alredy__signin{
     margin-left: 25%;
     margin-top: 20px;
     font-size: 15px;
 }
 
-.darkorange__line {
+
+.darkorange__line{
     height: 0.5px;
     background-color: rgb(190, 89, 53);
     margin: 1% 25%;
 }
 
-.trail__heading {
+
+.trail__heading{
     font-size: 45px;
     margin-top: 1%;
     margin-left: 32%;
     color: #ffffff;
 }
 
-.credit__card {
+
+.credit__card{
     font-size: 25px;
     margin-left: 35%;
     color: #ffffff;
 }
 
-.google__button {
+.google__button{
     height: 45px;
     width: 29%;
     margin: 3% 35% 2%;
@@ -60,7 +64,8 @@ body {
     font-size: 15px;
 }
 
-.left__line {
+
+.left__line{
     width: 9%;
     height: 0.5px;
     background-color: lightgrey;
@@ -75,18 +80,17 @@ body {
     margin-top: 10px;
 }
 
-.right__line {
+.right__line{
     width: 9%;
     height: 0.5px;
     background-color: lightgrey;
     margin-left: 55.1%;
 }
 
-#signup__form {
+#signup__form{
     margin-top: 2%;
     margin-left: 35%;
 }
-
 
 #first__name {
     height: 38px;
@@ -109,18 +113,20 @@ body {
     padding-left: 1%;
 }
 
-#company__name {
+
+#company__name{
     height: 38px;
     width: 30%;
     margin-top: 1.6%;
-    margin-left: 1.2%;
+    margin-left: .5%;
     border-radius: 3px;
     border: 1px solid lightgrey;
     outline: none;
     padding-left: 1%;
 }
 
-#work__email {
+
+#work__email{
     height: 38px;
     width: 30%;
     margin-top: 1.6%;
@@ -131,7 +137,8 @@ body {
     padding-left: 1%;
 }
 
-#email__password {
+
+#email__password{
     height: 38px;
     width: 30%;
     margin-top: 1.6%;
@@ -142,7 +149,8 @@ body {
     padding-left: 1%;
 }
 
-#signup__button {
+
+#signup__button{
     height: 45px;
     width: 46%;
     margin-top: 3.3%;
@@ -154,12 +162,13 @@ body {
     font-size: 20px;
 }
 
-#signup__button>a {
+
+#signup__button > a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.bear__image {
+.bear__image{
     position: absolute;
     height: 250px;
     left: 85%;
@@ -167,20 +176,22 @@ body {
     opacity: 0.5;
 }
 
-.grey__line {
+
+.grey__line{
     height: 0.5px;
     background-color: lightgrey;
     margin: 3.5% 35% 1%;
 }
 
-.bottom__text {
+
+.bottom__text{
     text-align: center;
     color: grey;
     font-size: 13px;
     margin-top: 1%;
 }
 
-.termsservices__privacypolicy {
+.termsservices__privacypolicy{
     margin-left: 43%;
     color: grey;
     font-size: 12px;
