@@ -1,0 +1,32 @@
+.form__tasks__item__child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.form__tasks__item__child__task {
+    display: flex;
+    align-items: center;
+}
+
+.form__tasks__item__child__task .fa {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #999;
+    background-color: #F4F4F4;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+
+.form__tasks__item__child__checkbox {
+    margin-right: 2%;
+}
+
+.form__tasks__item__child__checkbox input {
+    cursor: pointer;
+    width: 50px;
+    height: 15px;
+}

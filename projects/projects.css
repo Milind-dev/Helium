@@ -1,0 +1,944 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.nav__bar {
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    min-height: 7vh;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F47B1A;
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+.nav__bar__links {
+    flex: 2 1 50%;
+}
+
+.nav__bar__links ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav__bar__links ul li {
+    /* margin: 5px 0; */
+    padding: 15px 5px;
+    transition: all 0.1s ease;
+}
+
+.nav__bar__links ul li a,
+.nav__bar__actions a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.nav__bar__links__hero {
+    background-color: #ffffff4b;
+}
+
+.nav__bar__actions {
+    flex: 1 1 15%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.nav__bar__actions>a {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.nav__bar__actions__dropdown__button {
+    position: relative;
+}
+
+.nav__bar__actions__dropdown__button button {
+    width: 120px;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav__bar__actions__dropdown__button button img {
+    width: 31px;
+    height: 31px;
+}
+
+.nav__bar__actions__dropdown__button__list {
+    position: absolute;
+    top: 7.5vh;
+    right: 10%;
+    background-color: white;
+    color: black;
+    /* padding: 15px; */
+    width: 160px;
+    font-size: 15px;
+    display: none;
+    border: 1px solid #444;
+    box-shadow: 0 0 3px gray;
+}
+
+.nav__bar__actions__dropdown__button__list a {
+    display: block;
+    color: #444;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.nav__bar__actions__dropdown__button__list__show {
+    display: block;
+}
+
+.nav__bar__actions__dropdown__button__list hr {
+    border: 1px solid #999;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid rgb(161, 159, 159);
+    padding: 10px 15px;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name p {
+    color: #444;
+}
+
+.nav__bar__actions__dropdown__button__list::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    font-size: 45px;
+    color: #F4F4F4;
+    /* box-shadow: 0 0 3px #444; */
+    color: #F4F4F4;
+    position: absolute;
+    top: -8%;
+    right: 10%;
+}
+
+
+/* Buttons Section */
+.project__action {
+    margin-top: 7vh;
+}
+
+.project__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 17px 15%;
+    background: #eee;
+}
+
+.project__action__buttons button a,
+.createProject button a,
+footer div:nth-child(1) button a {
+    text-decoration: none;
+}
+
+.project__action__buttons button,
+.dropDown__buttons button,
+.createProject button,
+footer div:nth-child(1) button {
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.project__action__buttons__newProject,
+.createProject button {
+    background-color: #3BA52B;
+    border: none;
+}
+
+.project__action__buttons__newProject a,
+.createProject button a {
+    color: white;
+}
+
+.project__action__buttons__import,
+.project__action__buttons__export,
+.dropDown__buttons button,
+footer div:nth-child(1) button {
+    background: linear-gradient(#ffffff, #f1f1f1);
+    border: 1px solid #999;
+}
+
+.project__action__buttons__import a,
+.project__action__buttons__export a,
+.dropDown__buttons button,
+footer div:nth-child(1) button a {
+    color: #555;
+}
+
+.project__action__search {
+    margin-right: 50px;
+    position: relative;
+}
+
+.project__action__search input {
+    width: 300px;
+    padding: 10px 0;
+    padding-left: 42px;
+    font-size: 15px;
+    color: #555;
+    border: 1px solid #444;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+}
+
+.project__action__search .fa {
+    padding: 10px 20px;
+    padding-right: 0;
+    font-size: 16px;
+    color: #555;
+    /* background-color: white; */
+    position: absolute;
+    left: -2%;
+}
+
+
+/*Drop down buttons*/
+.dropDown__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 18% 20px 15%;
+    position: relative;
+}
+
+.dropDown__buttons__active__projects {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 105%;
+    background-color: rgb(255, 255, 255);
+    padding: 3px 0;
+    border-radius: 5px;
+    border: 1px solid #999;
+    box-shadow: 0 0 5px gray;
+    display: none;
+}
+
+.dropDown__buttons__active__projects::before,
+.dropDown__buttons__client__search::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    position: absolute;
+    top: -20%;
+    left: 7%;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+}
+
+.dropDown__buttons__active__projects a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 18px;
+    transition: all 0.1s ease;
+}
+
+
+
+.dropDown__buttons__client__search {
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    right: 0;
+    top: 110%;
+    width: 300px;
+    padding: 6px 0;
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 0 5px gray;
+    display: none;
+}
+
+.dropDown__buttons__dropDown__show {
+    display: flex;
+}
+
+.dropDown__buttons__client__search__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.dropDown__buttons__client__search__input input {
+    width: 280px;
+    padding: 10px 38px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+.dropDown__buttons__client__search__input .fa {
+    position: absolute;
+    top: 11%;
+    left: 8%;
+}
+
+.dropDown__buttons__client__search a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 0;
+    padding-left: 25px;
+    transition: all 0.1s ease;
+}
+
+.dropDown__buttons__client__search h2 {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.dropDown__buttons__client__search::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    position: absolute;
+    top: -14%;
+    left: 87%;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+}
+
+
+/*Create project section*/
+.createProject {
+    width: 67%;
+    margin: 15px 0;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    padding: 60px;
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.createProject img {
+    width: 320px;
+}
+
+.createProject p {
+    width: 420px;
+    margin: 20px 0;
+}
+
+.createProject p a {
+    font-size: 16px;
+    color: #0078c9;
+}
+
+
+/* New project form */
+.project__form {
+    width: 70%;
+    margin: 50px auto;
+    display: none;
+}
+
+
+.project__form h1 {
+    font-size: 30px;
+    color: #444;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.project__form hr {
+    border: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+.project__form__client {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 15px 0;
+}
+
+.project__form__client__input {
+    display: none;
+    margin-left: 4px;
+}
+
+.project__form__client input,
+.project__form__projectName input,
+.project__form__projectCode input {
+    width: 300px;
+    padding: 10px 13px;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.project__form__client span {
+    margin-left: 5px;
+}
+
+.project__form__client button {
+    padding: 5px 15px;
+    font-size: 14px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.project__form__client__list {
+    position: relative;
+}
+
+.project__form__client__list select {
+    width: 300px;
+    padding: 10px 13px;
+    font-size: 13px;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    margin-left: 4px;
+}
+
+.project__form__client__list::after {
+    font-family: FontAwesome;
+    content: "\f078";
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    right: 38%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.project__form div label {
+    width: 200px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.project__form__projectName,
+.project__form__projectCode,
+.project__form__projectDate {
+    margin: 15px 0;
+}
+
+.project__form__projectCode,
+.project__form__projectDate,
+.project__form__notes {
+    position: relative;
+}
+
+.project__form__projectCode span:nth-of-type(1),
+.project__form__projectDate span:nth-of-type(1),
+.project__form__notes span:nth-of-type(1),
+.form__projectType span:nth-of-type(1) {
+    position: absolute;
+    left: 13%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    cursor: pointer;
+    color: #999;
+}
+
+.project__form__projectCode span:nth-of-type(2) {
+    color: #555;
+}
+
+.project__form__projectDate input {
+    padding: 10px;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.project__form__notes {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.project__form__notes label {
+    margin-top: 20px;
+}
+
+.project__form__notes span:nth-of-type(1) {
+    top: 20%;
+}
+
+.project__form__notes__textArea textarea {
+    width: 600px;
+    height: 100px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'Poppins',
+        sans-serif;
+    margin: 15px 0;
+}
+
+.project__form__notes__textArea p {
+    color: #999;
+}
+
+.form__projectType {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+
+.form__projectTypes__time,
+.form__projectTypes__fee,
+.form__projectTypes__non-billable {
+    position: relative;
+}
+
+.form__projectTypes__time__button,
+.form__projectTypes__fee__button,
+.form__projectTypes__non-billable__button {
+    padding: 12px;
+    width: 189px;
+    margin-right: 16.5px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #999;
+    color: #555;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* .form__projectTypes__non-billable__button {
+    background-color: #F36C00;
+    color: white;
+    border: none;
+} */
+
+.form__projectType+hr {
+    margin-top: 280px;
+}
+
+.form__projectTypes__non-billable__dropDown,
+.form__projectTypes__fee__dropDown,
+.form__projectTypes__time__dropDown {
+    position: absolute;
+    width: 600px;
+    right: 8%;
+    top: 150%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.form__projectTypes__non-billable__dropDown h4,
+.form__projectTypes__fee__dropDown h4,
+.form__projectTypes__time__dropDown h4 {
+    font-size: 17px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.form__projectTypes__non-billable__dropDown p,
+.form__projectTypes__fee__dropDown p,
+.form__projectTypes__time__dropDown p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.form__projectTypes__non-billable__dropDown select,
+.form__projectTypes__fee__dropDown select,
+.form__projectTypes__time__dropDown select {
+    width: 200px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #555;
+    border-radius: 3px;
+    border: 1px solid #999;
+    appearance: none;
+    cursor: pointer;
+}
+
+.form__projectTypes__non-billable__dropDown::before,
+.form__projectTypes__fee__dropDown::before,
+.form__projectTypes__time__dropDown::before {
+    content: "\f0d8";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 35px;
+    top: -19%;
+    right: 14%;
+    color: #555;
+}
+
+.form__projectTypes__non-billable__dropDown::after,
+.form__projectTypes__fee__dropDown::after,
+.form__projectTypes__time__dropDown::after {
+    font-family: FontAwesome;
+    content: "\f078";
+    font-size: 15px;
+    position: absolute;
+    left: 32%;
+    top: 65%;
+    color: #555;
+    cursor: pointer;
+}
+
+.form__projectTypes__fee__dropDown {
+    right: -92%;
+}
+
+.form__projectTypes__fee__dropDown input {
+    padding: 10px;
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+.form__projectTypes__fee__dropDown::before {
+    top: -11%;
+    left: 49%;
+}
+
+.form__projectTypes__fee__dropDown::after {
+    top: 80%;
+}
+
+.form__projectTypes__time__dropDown {
+    left: 0%;
+}
+
+.form__projectTypes__time__dropDown select:nth-of-type(1) {
+    margin-bottom: 5px;
+}
+
+.form__projectTypes__time__dropDown::before {
+    top: -10%;
+    left: 15%;
+}
+
+.form__projectTypes__time__dropDown::after {
+    top: 80%;
+}
+
+.form__projectTypes__time__dropDown,
+.form__projectTypes__fee__dropDown {
+    display: none;
+}
+
+.form__button__style {
+    background-color: #F36C00;
+    color: white;
+    border: none;
+    /* font-size: 100px; */
+}
+
+
+
+/* //permissions */
+.form__permissions {
+    display: flex;
+}
+
+.form__permissions label {
+    width: 200px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.form__permissions__radio__buttons span {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+.form__permissions__radio__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__permissions__radio__buttons input {
+    font-size: 15px;
+    color: #F36C00;
+}
+
+
+/* task section */
+
+.form__tasks {
+    margin: 35px 0;
+}
+
+.form__tasks__heading,
+.form__team__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    margin: 15px 0;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.form__tasks__heading h4,
+.form__team__heading h4 {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #555;
+}
+
+.form__tasks__heading__select,
+.form__team__heading__select {
+    text-align: center;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+
+/* Task section */
+
+.form__tasks__item {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #999;
+}
+
+.form__tasks>input {
+    width: 500px;
+    padding: 10px 13px;
+    margin: 5px 0;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+
+.form__tasks__suggestions {
+    border: 1px solid #999;
+    width: 500px;
+    max-height: 150px;
+    padding: 10px 0;
+    overflow-y: scroll;
+    /* scroll-behavior: smooth; */
+    box-shadow: 0 0 5px gray;
+    margin-top: -5px;
+    border-radius: 3px;
+    display: none;
+}
+
+.form__tasks__suggestions .form__tasks__suggestions__item {
+    font-size: 14px;
+    padding: 5px 13px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.task__suggestions {
+    display: block;
+}
+
+.form__team__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.form__team__item__user {
+    display: flex;
+    align-items: center;
+
+}
+
+.form__team__item__user .fa {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #999;
+    background-color: #F4F4F4;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+
+.form__team__item__user img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.form__team__checkBox {
+    margin-right: 5%;
+}
+
+.form__team+p {
+    font-size: 14px;
+    color: #555;
+    margin: 25px 0;
+}
+
+
+/* form buttons */
+.project__form__action {
+    margin-top: 50px;
+}
+
+.project__form__action button {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.project__form__action__save {
+    background-color: #3BA52B;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.project__form__action__cancel {
+    background-color: #f4f4f4;
+    border: 1px solid #999;
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px 15%;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #999;
+    margin-top: 100px;
+}
+
+footer div {
+    display: flex;
+    align-items: baseline;
+}
+
+footer div:nth-child(1) p {
+    font-size: 13px;
+    color: #555;
+}
+
+footer div:nth-child(1) button {
+    margin-left: 15px;
+    transition: all 0.1s ease;
+}
+
+footer div:nth-child(2) a {
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.1s ease;
+}
+
+
+
+
+
+
+
+
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
+}
+
+.project__action__buttons__newProject:hover,
+.createProject button:hover {
+    background-color: #2f8522;
+}
+
+.project__action__buttons__import:hover,
+.project__action__buttons__export:hover,
+.dropDown__buttons button:hover,
+footer div:nth-child(1) button:hover {
+    background: linear-gradient(#f0f0f0, #e7e7e7)
+}
+
+.project__action__search input:focus {
+    width: 400px;
+    border: 1px solid #0078c9;
+}
+
+.dropDown__buttons__client__search__input input:focus {
+    border: 1px solid #0078c9;
+}
+
+footer div:nth-child(2) a:hover {
+    color: #555;
+}
+
+.project__form__client__list:focus .project__form__client__list::after {
+    transform: translateY(50%) rotate(180deg);
+}
