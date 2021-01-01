@@ -1,0 +1,250 @@
+<!-- Expenses -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./ExpenseStyle/expensestyle.css" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    ​body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #teammember__containers {
+        background-color: #f4f4f4;
+    }
+
+    .teammember__sections_plus {
+        font-size: 15px;
+        font-weight: bold;
+        cursor: not-allowed;
+        background: linear-gradient(#4daa21, #4daa21);
+        color: white;
+    }
+
+    .teammember__sections__btn {
+        border: transparent;
+        text-align: center;
+        margin: 20px 120px;
+        width: 140px;
+        height: 35px;
+        border-radius: 6px 6px 6px 6px;
+        color: grey;
+        font-size: 16px;
+        background: linear-gradient(#4daa21, #4daa21);
+
+    }
+
+    .teammember__sections_trackcreateproject {
+        border: 1px solid grey;
+        text-align: center;
+        width: 160vh;
+        height: 105vh;
+        margin: 10px 120px;
+        color: #c1c1c1;
+        font-size: 20px;
+        line-height: 1.2;
+        border-radius: 10px;
+    }
+
+    .teammember__sections_trackcreateproject>img {
+        width: 410px;
+        margin-top: 42px;
+    }
+
+    .teammember__sections_trackcreateproject>div+button {
+        text-align: center;
+        border: 2px solid wheat;
+        text-align: center;
+        margin: 20px 120px;
+        width: 140px;
+        height: 40px;
+        border-radius: 10px;
+        color: whitesmoke;
+        background: linear-gradient(#4fb840, #14a000);
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .teammember__sections_trackcreateproject>p+button :hover {
+        /* background-color: green; */
+        color: grey;
+    }
+
+    .teammember__sections_trialupgrade {
+        height: 120px;
+        background-color: #f9f9f9;
+        color: whitesmoke;
+        font-size: 12px;
+    }
+
+    .teammember__sections_trialleft {
+        display: flex;
+        flex: 1;
+        padding: 32px 3px;
+        margin: 120px;
+        text-align: center;
+        border: 1px solid white;
+    }
+
+    .teammember__sections_trialleft>button {
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        color: #666666;
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 12px;
+        cursor: pointer;
+        background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4)
+    }
+
+    .teammember__sections_trialleft>p {
+        text-align: center;
+        text-align: center;
+        margin-top: 7px;
+        color: grey;
+        font-size: 14px;
+    }
+
+    .teammember__sections_trialleft>p>span {
+        color: darkgrey;
+    }
+
+    .teammember__sections_privacyterms {
+        margin-left: 83vh;
+        padding: 2px;
+        margin-top: -10px;
+    }
+
+    .teammember__sections_privacyterms>.teammember__sections_privacylinks {
+        color: grey;
+        text-decoration: none;
+        padding-left: 11px;
+        font-size: 15px;
+    }
+
+    .teammember__sections_privacylinks:hover {
+        color: lightgrey;
+    }
+
+    #teammember_harvesting {
+        color: lightgrey;
+        font-size: 33px;
+    }
+
+    #teammember_harvesting:hover {
+        color: grey;
+        font-size: 33px;
+    }
+
+    .teammember__sections_newexpense {
+        background-color: lightgrey;
+    }
+
+    .teammember__eachworkreview {
+        width: 490px;
+        /* height: 130px; */
+        /* border: 1px solid red; */
+        background-color: #fffbde;
+        margin:12px 210px;
+    }
+
+    .teammember__eachworkreview > .teammember__eachworkreview__week{
+        display: flex;
+        flex: 1;
+        width: 590px;
+        height: 60px;
+        border: 1px solid #deca00;
+        justify-content: space-between;
+        padding: 12px;
+        font-size: 16px;
+    }
+    .teammember__eachworkreview__week > p + select {
+        border: 2px solid wheat;
+        text-align: center;
+        border-radius: 5px;
+        color: #333;
+        background: linear-gradient(white, white);
+        font-size: 14px;
+        font-weight: inherit;
+        cursor: pointer;
+        
+    }
+</style>
+
+<body>
+    <div id="teammember__containers">
+        <div class="expenses__sections">
+            <div class="teammember__sections_newexpense">
+                <button type="button" class="teammember__sections__btn" id="teammember__sections__btns">
+                    <span class="teammember__sections_plus"> + Add Person</span></button>
+                <div id="teammember__sections_hiddenform">
+                </div>
+            </div>
+            <div class="teammember__sections_trackcreateproject">
+                <img src="./teamimg/team-wizard-illustration@2x-12cf25cde77656446364c5503bcd780fb85994f4c1a643bcd048a8cd456876e2.png"
+                    alt="expenses__sections_img">
+                <p> Welcome to Team! Here you can review and edit time, and see how you’re doing<br>
+                    against capacity. That’s the number of hours per week you typically work.!
+                    <br><br>
+                <p>If you’re not working with a large team and this information<br>
+                    isn’t useful for you, feel free to turn this section off.
+                </p>
+
+
+                <div class="teammember__eachworkreview">
+                    <div class="teammember__eachworkreview__week">
+                        <p>How many hours do you usually work each week? </p>
+                        <select>
+                            <option> No Preference </option>
+                            <option> Monday </option>
+                            <option> Tuesday </option>
+                            <option> Sunday </option>
+                        </select>
+                    </div>
+                    <div class="teammember__eachworkreview__week">
+                        <p>When is your timesheet due each week?</p>
+                        <select>
+                            <option> No Preference </option>
+                            <option> Monday </option>
+                            <option> Tuesday </option>
+                            <option> Sunday </option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <button> create a project </button>
+            </div>
+            <div class="teammember__sections_trialupgrade">
+                <div class="teammember__sections_trialleft">
+                    <p> <span> 29 days </span> left in your free trial </p>
+                    <button>upgrade</button>
+                    <div class="teammember__sections_privacyterms">
+                        <a class="teammember__sections_privacylinks" href="#">Privacy</a>
+                        <a class="teammember__sections_privacylinks" href="#">Terms</a>
+                        <a class="teammember__sections_privacylinks" id="teammember_harvesting" href="#">Harvest</a>
+                    </div>
+                </div>
+            </div>
+
+            <script src="./ExpenseScript.js/script.js"></script>
+</body>
+
+</html>
