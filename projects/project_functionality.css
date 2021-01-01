@@ -1,0 +1,307 @@
+.form__tasks__item__child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.form__tasks__item__child__task {
+    display: flex;
+    align-items: center;
+}
+
+.form__tasks__item__child__task .fa {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #999;
+    background-color: #F4F4F4;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+
+.form__tasks__item__child__checkbox {
+    margin-right: 2%;
+}
+
+.form__tasks__item__child__checkbox input {
+    cursor: pointer;
+    width: 50px;
+    height: 15px;
+}
+
+
+/* Graph section */
+
+body {
+    background: #eee;
+}
+
+
+.project__graph {
+    width: 70%;
+    margin: 15px auto;
+    background-color: #eee;
+}
+
+.project__graph>p {
+    margin: 3px 0;
+    color: #444;
+}
+
+.project__graph__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__graph__details__text {
+    display: flex;
+    align-items: center;
+}
+
+.project__graph__details__text h3 {
+    color: #444;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.project__graph__details__text span {
+    font-size: 10px;
+    background-color: white;
+    padding: 2px;
+    border: 1px solid #999;
+    color: #555;
+    border-radius: 2px;
+}
+
+.project__graph__details__button {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.project__graph__details__button>div {
+    position: relative;
+}
+
+.project__graph__details__button button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.project__graph__details__button__actions__div {
+    position: absolute;
+    left: -20%;
+    top: 110%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    background-color: white;
+    width: 110px;
+    box-shadow: 0 0 5px gray;
+    display: none;
+}
+
+.project__graph__details__button__actions__div__show {
+    display: flex;
+}
+
+.project__graph__details__button__actions__div a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    transition: all 0.1s ease;
+}
+
+.project__graph__details__button__actions__div::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    position: absolute;
+    top: -18%;
+    right: 7%;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+}
+
+.project__graph__dates {
+    display: flex;
+    align-items: center;
+}
+
+.project__graph__dates .fa {
+    margin-right: 10px;
+}
+
+#mixed-chart {
+    margin: 35px 0 0 15%;
+    background: white;
+    padding: 25px;
+    border: 1px solid #999;
+}
+
+
+.project__graph__dynamic {
+    display: flex;
+    width: 1020px;
+    margin-left: 15%;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    border: 1px solid #999;
+}
+
+.project__graph__dynamic>div {
+    width: 25%;
+    padding: 15px;
+    border-right: 1px solid #999;
+}
+
+.project__graph__dynamic__time div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__graph__dynamic__time h6,
+.project__graph__dynamic__unInvoiced h6 {
+    font-size: 13px;
+    color: #555;
+}
+
+.project__graph__dynamic__time>span {
+    font-size: 25px;
+}
+
+.project__graph__dynamic__time div,
+.project__graph__dynamic__unInvoiced,
+.project__graph__dynamic__budget {
+    font-size: 13px;
+    color: #555;
+}
+
+
+.project__graph__dynamic__cost {
+    color: #555;
+}
+
+.project__graph__dynamic__cost h1 {
+    font-size: 30px;
+}
+
+
+
+/* graph__analysis */
+
+.graph__analysis {
+    width: 100%;
+    margin: 100px 0;
+    padding: 70px 15%;
+    position: relative;
+    background-color: white;
+    border-top: 1px solid #999;
+}
+
+.grapg__analysis__buttons {
+    position: absolute;
+    top: -10.4%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+.grapg__analysis__buttons button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-bottom: 1px solid #999;
+}
+
+.grapg__analysis__buttons button:nth-of-type(1) {
+    border: 1px solid #999;
+    background-color: white;
+    border-bottom: none;
+    border-top: 5px solid #F47B1A;
+}
+
+.graph__analysis__alliTime__dropDown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    /* border-bottom: 1px solid #999; */
+}
+
+.graph__analysis__alliTime__dropDown>h1 {
+    font-size: 30px;
+    color: rgb(66, 66, 66);
+    margin: 10px 0;
+}
+
+.graph__analysis__alliTime__dropDown__buttons {
+    margin-right: 40px;
+}
+
+.graph__analysis__alliTime__dropDown__buttons select {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.graph__analysis__allTime__details__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.graph__analysis__allTime__details__heading div {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+    /* margin-right: 10px; */
+
+
+}
+
+.graph__analysis__allTime__details__list .graph__analysis__allTime__details__list__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.graph__analysis__allTime__details__list__item h4 {
+    color: rgb(63, 63, 63);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+/* Animations */
+.project__graph__details__button__actions__div a:hover {
+    background-color: #0078c9;
+    color: white;
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"
+        href="https://www.getharvest.com/assets/apple-touch-icon-3b0196d037cb2439496a001bac80a4647cb1f35cfa37b52d4c754adc2c041532.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./project_functionality.css">
+    <!-- <link rel="stylesheet" href="timesheet2.css"> -->
+    <title>Projects-Naeem-Harvest</title>
+
+</head>
+
+
+<body>
+    <header>
+        <nav class="nav__bar">
+            <div class="nav__bar__links">
+                <ul>
+                    <li><a href="../Time/timesheet.html">Time</a></li>
+                    <li><a href="#">Expenses</a></li>
+                    <li class="nav__bar__links__hero"><a href="./projects.html">Projects</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Invoices</a></li>
+                    <li><a href="#">Manage</a></li>
+                </ul>
+            </div>
+            <div class="nav__bar__actions">
+                <a href="#">Help</a>
+                <a href="#">Settings</a>
+                <div class="nav__bar__actions__dropdown__button" id="nav__bar__actions__dropdown__button">
+                    <button>
+                        <img src="https://proxy.harvestfiles.com/production_harvestapp_public/uploads/users/avatar/003/561/355/092fef1ec994a51c9828b147545480b8f69f12d0/normal.?1609215247"" alt="
+                            avatar">
+                        <span>Naeem</span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="nav__bar__actions__dropdown__button__list"
+                        id="nav__bar__actions__dropdown__button__list">
+                        <div class="nav__bar__actions__dropdown__button__list__user__name">
+                            <h3>Naeem Shaik</h3>
+                            <p>Naeem</p>
+                        </div>
+                        <a href="#">My Profile</a>
+                        <a href="#">My Time Report</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Referrals</a>
+                        <hr />
+                        <a href="#">Apps</a>
+                        <a href="#">Integrations</a>
+                        <hr />
+                        <a href="../index.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- <div class="topGrey__box">
+        <div class="time__button">
+            <button> <a href="timesheet.html">Timesheet</a></button>
+            <button><a href="pending.html">Pending Approval</a></button>
+            <button><a href="./unsubmitted.html">Unsubmitted</a></button>
+            <button><a href="archived.html">Archive</a></button>
+        </div>
+    </div>
+
+    <div class="day__page" id="day__page">
+        <div class="middle__box">
+            <button class="leftarrow__button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="rightarrow__button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button><strong
+                id="change__monday">Today: Friday, 1 Jan</strong><span id="hide__text"></span>
+
+            <button class="calender__button"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+            <button class="day__button">Day</button>
+            <button class="day__button" onclick="Switch()">Week</button>
+        </div>
+        <div>
+            <button class="timeTrackingActivating__button" id="timeTrackingActivating__button"><i class="fa fa-plus"
+                    aria-hidden="true"></i></button>
+            <button class="monday__button" onclick="Monday()">M<div>0:00</div></button>
+            <button class="weekdays__button" onclick="Tuesday()">T<div>0:00</div></button>
+            <button class="weekdays__button" onclick="Wednesday()">W<div>0:00</div></button>
+            <button class="weekdays__button" onclick="Thursday()">Th<div>0:00</div></button>
+            <button class="weekdays__button" onclick="Friday()">F<div>0:00</div></button>
+            <button class="weekdays__button" onclick="Saturday()">S<div>0:00</div></button>
+            <button class="weekdays__button" onclick="Sunday()">Su<div>0:00</div></button>
+            <span class="totalWeek__button">Total: 0:00</span>
+
+            <div class="timer__cardlist" id="timer__cardlist">
+                <div class="timer__cardlistItem">
+                        <div class="timercard__listItem__left">
+                            <div >
+                                <h5></h5>(<span></span>)
+                            </div><p></p>
+                        </div>
+                        <div class="timercard__listItem__right">
+                            <h3></h3>
+                            <button><img src="./dynamic_clock.gif" alt="running__clock"> Start</button>
+                            <button><i class="fa fa-clock-o" aria-hidden="true"></i> Stop</button>
+                            <button><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        </div> 
+                    </div>
+            </div>
+            <div class="daysproject__box" id="daysproject__box">
+
+                <img src="https://cache.harvestapp.com/assets/onboarding/landing-timesheets-day@2x-ba92c8a231563661a31ba7af8e20e4dd1b19e6286b94065e7a45aec949752ce6.png" 
+                    alt="center bear image" class="bear__image">
+                <p class="paragraphBelow__bearimage">“It is good to have an end to journey towards, but it is the
+                    journey that matters,
+                    in the end.”
+                    – Ursula K. Le Guin
+
+            </div>
+            <button class="submitForApproval__button"> Submit week for approval</button>
+        </div>
+    </div> -->
+
+    <!-- Week Page after adding project -->
+
+    <!-- <div class="week__page" id="week__page">
+        <div class="weeksmiddle__box">
+            <button class="weeksleftarrow__button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="weeksrightarrow__button"><i class="fa fa-chevron-right"
+                    aria-hidden="true"></i></button><strong>This Week:</strong><span> 28 Dec 2020 - 03 Jan 2021</span>
+
+            <button class="weekscalender__buttonforweek"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+            <button class="weeksday__button" onclick="Switch()">Day</button>
+            <button class="weeksday__button">Week</button>
+        </div> -->
+
+    <!-- <div class="weekproject__box">
+            <img src="https://cache.harvestapp.com/assets/onboarding/landing-timesheets-week@2x-8ea92aef428a0e48a56b1161d1985bbf6e975185378be595b89fdd3f7a0b343b.png" 
+                alt="center bear image" class="weekBear__image">
+            <p class="paragraphBelow__bearimage">“Aside from velcro, time is the most mysterious substance in the
+                universe.”
+                – Dave Barry</p>
+
+        </div>
+        <button class="newRow__button">+ New Row</button>
+        <button class="submitweekForApproval__button"> Submit week for approval</button>
+    </div> -->
+
+
+
+    <!-- Popup Box -->
+
+    <!-- <div class="popUp__container" id="popUp__container">
+        <div class="popup__box" id="popup__box">
+
+            <div class="newTimeEntry__box">New Time Entry </div>
+            <div class="popup__content">
+                <div>
+                    <p>Poject/Task</p>
+                    <select name="Project" id="popup__contain__project">
+
+                    </select>
+                </div>
+
+                <div class="dropDown__buttons__role" id="dropDown__buttons__role">
+                    <select name="role" id="role__of__client"></select>
+                </div>
+
+                <input id="text__area" placeholder="Notes"></input>
+                <input id=""></input>
+                <button class="startTimer__button" id="startTimer__button">Start Timer</button>
+                <button class="closeTimer__button" id="closeTimer__button">Cancel</button>
+            </div>
+        </div>
+
+    </div> -->
+
+    <!-- <div class="popup__box" id="popup__box">
+            
+            <div class="newTimeEntry__box">New Time Entry </div>
+            <div class="popup__content">
+                <div><p>Poject/Task</p>
+                    <select name="Project" id="popup__contain__project">
+                        
+                    </select>
+                </div>
+    
+                <div class="dropDown__buttons__role" id="dropDown__buttons__role">
+                    <select name="role" id="role__of__client"></select>
+                </div>
+    
+                <textarea id="text__area" cols="45" rows="4"></textarea>
+                <textarea id="" cols="15.5" rows="4"></textarea>
+                <button  class="startTimer__button">Start Timer</button>
+                <button class="closeTimer__button">Cancel</button>
+            </div>
+        </div> -->
+
+
+
+
+    <section class="project__action">
+        <div class="project__action__back__button">
+            <p>
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Back to Projects
+            </p>
+        </div>
+        <div class="project__action__search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Search by client or project name" />
+        </div>
+    </section>
+
+
+    <section class="project__graph" id="project__graph">
+        <p class="project__graph__client"></p>
+        <div class="project__graph__details">
+            <div class="project__graph__details__text">
+                <h3></h3>
+                <span>NON-BILLABLE</span>
+            </div>
+            <div class="project__graph__details__button">
+                <button class="project__graph__details__button__edit">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    Edit Project
+                </button>
+                <div>
+                    <button class="project__graph__details__button__actions">
+                        Actions
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="project__graph__details__button__actions__div">
+                        <a href="#">Pin</a>
+                        <a href="#">Duplicate</a>
+                        <a href="#">Archive</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project__graph__dates">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <p></p>
+        </div>
+    </section>
+
+
+    <canvas id="mixed-chart" width="1020" height="400"></canvas>
+
+
+    <section class="project__graph__dynamic">
+        <div class="project__graph__dynamic__time">
+            <h6>Total Hours</h6>
+            <span id="project__graph__dynamic__time">0.00</span>
+            <div>
+                <p>Billable Hours</p><span>0.00</span>
+            </div>
+            <div>
+                <p>Non-Billable Hours</p><span id="project__graph__dynamic__time__nonBillable">0.00</span>
+            </div>
+        </div>
+        <div class="project__graph__dynamic__budget">
+            <p>Budget Remaining</p>
+            <p>No budget is set on this project.</p>
+            <a href="#">Set up budget</a>
+        </div>
+        <div class="project__graph__dynamic__cost">
+            <p>Internal Costs</p>
+            <h1>N/A</h1>
+        </div>
+        <div class="project__graph__dynamic__unInvoiced">
+            <h6>Uninvoiced Amount</h6>
+            <p>This project is non-billable, so it doesn’t have invoices.</p>
+        </div>
+    </section>
+
+
+    <section class="graph__analysis">
+        <div class="grapg__analysis__buttons">
+            <button>Tasks</button>
+            <button>Team</button>
+            <button>Invoices</button>
+        </div>
+        <div class="graph__analysis__allTime">
+            <div class="graph__analysis__alliTime__dropDown">
+                <h1>All Time</h1>
+                <div class="graph__analysis__alliTime__dropDown__buttons">
+                    <select name="allTime" id="allTime">
+                        <option value="All Time">All Time</option>
+                        <option value="Week">Week</option>
+                        <option value="Semimonth">Semimonth</option>
+                        <option value="Month">Month</option>
+                        <option value="Quarter">Quarter</option>
+                        <option value="Year">Year</option>
+                        <option value="Custom">All Time</option>
+                    </select>
+                    <select name="export" id="export">
+                        <option value="Excel">Excel</option>
+                        <option value="CSV">CSV</option>
+                    </select>
+                </div>
+            </div>
+            <div class="graph__analysis__allTime__details">
+                <div class="graph__analysis__allTime__details__heading">
+                    <p>Non-Billable Tasks</p>
+                    <div>
+                        <p>Total
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </p>
+                        <p>Costs</p>
+                    </div>
+                </div>
+                <div class="graph__analysis__allTime__details__list" id="graph__analysis__allTime__details__list"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <p>26 days left in your free trail</p>
+            <button><a href=" #">Upgrade</a></button>
+        </div>
+        <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <h2><a href="#">HARVEST</a></h2>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <!-- <script src="../Time/timesheet2.js"></script> -->
+    <script src="../innerContent.js"></script>
+    <script src="../project_charts.js"></script>
+
+</body>
+
+</html>

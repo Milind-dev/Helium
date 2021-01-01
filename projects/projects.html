@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"
+        href="https://www.getharvest.com/assets/apple-touch-icon-3b0196d037cb2439496a001bac80a4647cb1f35cfa37b52d4c754adc2c041532.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./project_functionality.css">
+    <title>Projects-Naeem-Harvest</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav__bar">
+            <div class="nav__bar__links">
+                <ul>
+                    <li><a href="../Time/timesheet2.html">Time</a></li>
+                    <li><a href="../expenses/expenses.html">Expenses</a></li>
+                    <li class="nav__bar__links__hero"><a href="#">Projects</a></li>
+                    <li><a href="../teammember/teammember.html">Team</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="../invoiceOverview/invoiceoverview.html">Invoices</a></li>
+                    <li><a href="../manageclient/manageClient.html">Manage</a></li>
+                </ul>
+            </div>
+            <div class="nav__bar__actions">
+                <a href="#">Help</a>
+                <a href="#">Settings</a>
+                <div class="nav__bar__actions__dropdown__button" id="nav__bar__actions__dropdown__button">
+                    <button>
+                        <img src="https://proxy.harvestfiles.com/production_harvestapp_public/uploads/users/avatar/003/561/355/092fef1ec994a51c9828b147545480b8f69f12d0/normal.?1609215247"" alt="
+                            avatar">
+                        <span>Naeem</span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="nav__bar__actions__dropdown__button__list"
+                        id="nav__bar__actions__dropdown__button__list">
+                        <div class="nav__bar__actions__dropdown__button__list__user__name">
+                            <h3>Naeem Shaik</h3>
+                            <p>Naeem</p>
+                        </div>
+                        <a href="#">My Profile</a>
+                        <a href="#">My Time Report</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Referrals</a>
+                        <hr />
+                        <a href="#">Apps</a>
+                        <a href="#">Integrations</a>
+                        <hr />
+                        <a href="../index.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project__action">
+        <div class="project__action__buttons">
+            <button class="project__action__buttons__newProject" id="createProject__button__1">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+                    New Project
+                </a>
+            </button>
+            <button class="project__action__buttons__import"><a href="#">Import</a></button>
+            <button class="project__action__buttons__export"><a href="#">Export</a></button>
+        </div>
+        <div class="project__action__back__button">
+            <p>
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Back to Projects
+            </p>
+        </div>
+        <div class="project__action__search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Search by client or project name" />
+        </div>
+    </section>
+
+
+    <section class="dropDown__buttons" id="dropDown__buttons">
+        <div class="dropDown__buttons__active" id="dropDown__buttons__active">
+            <button class="dropDown__buttons__active__Button">
+                Active Projects (<span id="dropDown__buttons__active__projects__button__count">0</span>) <i
+                    class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropDown__buttons__active__projects" id="dropDown__buttons__active__projects">
+                <a href="#">Active Projects (<span id="dropDown__buttons__active__projects__count">0</span>)</a>
+                <a href="#">Budgeted Projects (<span>0</span>)</a>
+                <a href="#">Archieved Projects (<span>0</span>)</a>
+            </div>
+        </div>
+        <div class="dropDown__buttons__client" id="dropDown__buttons__client">
+            <button class="dropDown__buttons__client__filterButton" id="dropDown__buttons__client__filterButton">
+                Filter By Client <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropDown__buttons__client__search" id="dropDown__buttons__client__search">
+                <div class="dropDown__buttons__client__search__input">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <a href="#">All Clients</a>
+                <h2>Active Clients</h2>
+                <a href="#" id="dropDown__buttons__client__search__name"><span>Naeem</span></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="createProject" id="createProject">
+        <img src="https://cache.harvestapp.com/assets/onboarding/landing-projects@2x-e00081706c6ce0b93cf18c21c6e488f1fc913045992fc34dd18e5e290bc971cb.png"
+            alt="person monitoring">
+        <p>Welcome to the command center for your projects.
+            This is your hub to track project progress, budgets,
+            and costs. <a href="#">Check out our intro to Projects</a>.
+        </p>
+        <button id="createProject__button__2"><a href="#">Create a New Project</a></button>
+    </section>
+
+
+    <section class="project__form" id="project__form">
+        <h1>New Project</h1>
+        <hr />
+        <div>
+            <div class="project__form__client">
+                <label for="client__input">Client</label>
+                <div class="project__form__client__input" id="project__form__client__input">
+                    <input type="text" name="clinet" id="client__input"><span> or </span>
+                    <button class="project__form__client__input__button"
+                        id="project__form__client__input__button">Choose a Client</button>
+                </div>
+                <div class="project__form__client__list" id="project__form__client__list">
+                    <select name="client list" id="project__form__client__list__options">
+                        <option value="" disabled selected>Choose a client...</option>
+                        <option value="Naeem">Naeem</option>
+                        <option value="Rajat">Rajat</option>
+                        <option value="Milind">Milind</option>
+                    </select>
+                    <span> or </span>
+                    <button class="project__form__client__list__button" id="project__form__client__list__button"> + New
+                        Client</button>
+                </div>
+            </div>
+            <div class="project__form__projectName">
+                <label for="projectName">Project Name</label>
+                <input type="text" name="project name" id="projectName">
+            </div>
+
+            <div class="project__form__projectCode">
+                <label for="projectCode">Project code</label>
+                <span>
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                </span>
+                <input type="text" name="project code" id="projectCode" /> <span> (optional)</span>
+            </div>
+
+            <div class="project__form__projectDate">
+                <label for="dates">Project Date</label>
+                <span>
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                </span>
+                <input type="text" name="project date" id="dateFrom" placeholder="Starts on" /><span> to </span>
+                <input type="text" name="project date" id="dateTo" placeholder="Ends on">
+            </div>
+
+            <div class="project__form__notes">
+                <label for="notes">Notes</label>
+                <span>
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                </span>
+                <div class="project__form__notes__textArea">
+                    <textarea name="notes" id="notes" cols="30" rows="10"
+                        placeholder="Optional, but great for notes like invoice schedules. You can see notes when creating an invoice for Fixed Fee projects."></textarea>
+                    <p>Notes can only be seen by administrators.</p>
+                </div>
+            </div>
+            <hr />
+            <div class="form__projectType">
+                <label for="projectType">Project Type</label>
+                <span>
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                </span>
+                <div class="form__projectTypes__time">
+                    <button id="form__projectTypes__time__button" class="form__projectTypes__time__button">Time &
+                        Metarials</button>
+                    <div class="form__projectTypes__time__dropDown" id="form__projectTypes__time__dropDown">
+                        <h4>Hourly Rates</h4>
+                        <p>We need hourly rates to track your projectʼs billable amount.</p>
+                        <!-- <button class="form__projectTypes__time__dropDown__hourly__button">
+                            No Hourly Rate <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button> -->
+                        <select name="hourly rate" id="hourlyRate">
+                            <option value="No hourly rate">No Hourly Rate</option>
+                            <hr />
+                            <option value="Project hourly rate">Project Hourly Rate</option>
+                            <option value="Person hourly rate">Person Hourly Rate</option>
+                            <option value="Task hourly rate">Task Hourly Rate</option>
+                        </select>
+
+                        <h4>Budget</h4>
+                        <p>Set a budget to track project progress.</p>
+                        <select name="budget" id="timeBudget">
+                            <option value="NO budget">No Budget</option>
+                            <hr />
+                            <option value="total fee">Total Project Fee</option>
+                            <option value="fees per task">Fees Per Task</option>
+                            <hr />
+                            <option value="total project hours">Total Project Hours</option>
+                            <option value="hours per task">Hours Per Task</option>
+                            <option value="hours per person">Hours Per Person</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__projectTypes__fee">
+                    <button class="form__projectTypes__fee__button" id="form__projectTypes__fee__button">Fixed
+                        Fee</button>
+                    <div class="form__projectTypes__fee__dropDown" id="form__projectTypes__fee__dropDown">
+                        <h4>Project Fees</h4>
+                        <p>Enter the amount you plan to invoice.</p>
+                        <!-- <span> -->
+                        <i class="fa fa-inr" aria-hidden="true"></i>
+                        <!-- </span> -->
+                        <input type="text" name="fee" id="fee">
+                        <h4>Budget</h4>
+                        <p>Set a budget to track project progress.</p>
+                        <select name="budget" id="feeBudget">
+                            <option value="NO budget">No Budget</option>
+                            <hr />
+                            <option value="total fee">Total Project Fee</option>
+                            <option value="fees per task">Fees Per Task</option>
+                            <hr />
+                            <option value="total project hours">Total Project Hours</option>
+                            <option value="hours per task">Hours Per Task</option>
+                            <option value="hours per person">Hours Per Person</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__projectTypes__non-billable">
+                    <button class="form__projectTypes__non-billable__button form__button__style"
+                        id="form__projectTypes__non-billable__button">Non-Billable</button>
+                    <div class="form__projectTypes__non-billable__dropDown"
+                        id="form__projectTypes__non-billable__dropDown">
+                        <h4>Budget</h4>
+                        <p>Set a budget to track project progress.</p>
+                        <select name="budget" id="billBudget">
+                            <option value="NO budget">No Budget</option>
+                            <hr />
+                            <option value="total project hours">Total Project Hours</option>
+                            <option value="hours per task">Hours Per Task</option>
+                            <option value="hours per person">Hours Per Person</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="form__permissions">
+                <label for="managerReport">Permissions</label>
+                <div class="form__permissions__radio__buttons">
+                    <div>
+                        <input type="radio" name="report" id="managerReport"
+                            value="Show project report to project managers on this project, and administrators. " />
+                        <span> Show project report to project
+                            managers
+                            on this project, and administrators. <a href="#">What will people see?</a></span>
+                    </div>
+                    <div>
+                        <input type="radio" name="report" id="everyoneReport"
+                            value="Show project report to everyone on the project." />
+                        <span> Show project report to everyone
+                            on
+                            the
+                            project. <a href="#">What will people see?</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form__tasks">
+                <div class="form__tasks__heading">
+                    <h4>Tasks</h4>
+                    <div class="form__tasks__heading__select">
+                        <p>Billable</p>
+                        <p>Select <a href="#">All</a> / <a href="#">None</a></p>
+                    </div>
+                </div>
+                <div class="form__tasks__item" id="form__tasks__item">There are no tasks on this project. What
+                    should we work on?
+                </div>
+                <input type="text" name="add task" id="addTask" placeholder="Add a task..." />
+                <div class="form__tasks__suggestions" id="form__tasks__suggestions">
+                    <div class="form__tasks__suggestions__item">Business Development</div>
+                    <div class="form__tasks__suggestions__item">Design</div>
+                    <div class="form__tasks__suggestions__item">Marketing</div>
+                    <div class="form__tasks__suggestions__item">Programming</div>
+                    <div class="form__tasks__suggestions__item">Project Management</div>
+                    <div class="form__tasks__suggestions__item">Vacation</div>
+                </div>
+            </div>
+            <div class="form__team">
+                <div class="form__team__heading">
+                    <h4>Team</h4>
+                    <div class="form__team__heading__select">
+                        <p>Manages This Project</p>
+                        <p>Select <a href="#">All</a> / <a href="#">None</a></p>
+                    </div>
+                </div>
+                <div class="form__team__item">
+                    <div class="form__team__item__user">
+                        <i class="fa fa-times" id="fa-times" aria-hidden="true"></i>
+                        <img src="https://proxy.harvestfiles.com/production_harvestapp_public/uploads/users/avatar/003/561/355/092fef1ec994a51c9828b147545480b8f69f12d0/normal.?1609215247"" alt="
+                            avatar">
+                        <p>Naeem Shaik</p>
+                    </div>
+                    <div class="form__team__checkBox">
+                        <input type="checkbox" name="check" id="checkbox">
+                    </div>
+                </div>
+            </div>
+            <p>Need to add other people to this project? <a href="#">Invite them</a> to Harvest!</p>
+        </div>
+        <div class="project__form__action">
+            <button class="project__form__action__save" id="project__form__action__save">
+                <a href="../Time/timesheet2.html">Save Project</a>
+            </button>
+            <button class="project__form__action__cancel" id="project__form__action__cancel">Cancel</button>
+        </div>
+    </section>
+
+
+    <!-- <section class="project__graph" id="project__graph">
+        <p class="project__graph__client"></p>
+        <div class="project__graph__details">
+            <div class="project__graph__details__text">
+                <h3></h3>
+                <span></span>
+            </div>
+            <div class="project__graph__details__button">
+                <button class="project__graph__details__button__edit">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    Edit Project
+                </button>
+                <div>
+                    <button class="project__graph__details__button__actions">
+                        Actions
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="project__graph__details__button__actions__div">
+                        <a href="#">Pin</a>
+                        <a href="#">Duplicate</a>
+                        <a href="#">Archive</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project__graph__dates">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <p></p><span> - </span>
+            <p></p>
+        </div>
+    </section>
+
+
+
+    <canvas id="mixed-chart" width="100" height="30"></canvas> -->
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <p>26 days left in your free trail</p>
+            <button><a href=" #">Upgrade</a></button>
+        </div>
+        <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <h2><a href="#">HARVEST</a></h2>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="../innerContent.js"></script>
+    <script src="../project_charts.js"></script>
+</body>
+
+</html>
