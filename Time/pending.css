@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',
+    sans-serif;
+    box-sizing: border-box;
+}
+
+.nav__bar {
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    min-height: 7vh;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F47B1A;
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+.nav__bar__links {
+    flex: 2 1 50%;
+}
+
+.nav__bar__links ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav__bar__links ul li {
+    /* margin: 5px 0; */
+    padding: 15px 5px;
+    transition: all 0.1s ease;
+}
+
+.nav__bar__links ul li a,
+.nav__bar__actions a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.nav__bar__links__hero {
+    background-color: #ffffff4b;
+}
+
+.nav__bar__actions {
+    flex: 1 1 15%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.nav__bar__actions>a {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.nav__bar__actions__dropdown__button {
+    position: relative;
+}
+
+.nav__bar__actions__dropdown__button button {
+    width: 120px;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav__bar__actions__dropdown__button button img {
+    width: 31px;
+    height: 31px;
+}
+
+.nav__bar__actions__dropdown__button__list {
+    position: absolute;
+    top: 7.5vh;
+    right: 10%;
+    background-color: white;
+    color: black;
+    /* padding: 15px; */
+    width: 160px;
+    font-size: 15px;
+    display: none;
+    border: 1px solid #444;
+    box-shadow: 0 0 3px gray;
+}
+
+.nav__bar__actions__dropdown__button__list a {
+    display: block;
+    color: #444;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.nav__bar__actions__dropdown__button__list__show {
+    display: block;
+}
+
+.nav__bar__actions__dropdown__button__list hr {
+    border: 1px solid #999;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid rgb(161, 159, 159);
+    padding: 10px 15px;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name p {
+    color: #444;
+}
+
+.nav__bar__actions__dropdown__button__list::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    font-size: 45px;
+    color: #F4F4F4;
+    /* box-shadow: 0 0 3px #444; */
+    color: #F4F4F4;
+    position: absolute;
+    top: -8%;
+    right: 10%;
+}
+
+.topGrey__box {
+    border: 1px solid #EEEEEE;
+    height: 40px;
+    background-color: #EEEEEE;
+    margin-top: 3.6%;
+}
+
+.time__button {
+    border: 1px ;
+    margin-left: 16%;
+}
+
+.time__button > button {
+    border: 1px ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 13px;
+    height: 40px;
+    margin-right: 1%;
+    outline: none;
+    cursor: pointer;
+}
+
+.time__button > button > a {
+    color: grey;
+    text-decoration: none;
+}
+
+
+.time__button button:hover {
+    border-bottom: 3px solid #F47A19;
+}
+
+h1 {
+    font-size: 26px;
+    margin: 3% 16% 1%;
+}
+
+
+.pendingData__box {
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    background-color: #EEEEEE;
+    margin: 0 16%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: grey;
+}
+
+#Projects__dropdown {
+    cursor: pointer;
+}
+
+#everyone__dropdown {
+    cursor: pointer;
+}
+
+/*Drop down buttons*/
+.dropDown__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 18% 20px 15%;
+    position: relative;
+}
+
+.dropDown__buttons__active__projects {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 105%;
+    background-color: rgb(255, 255, 255);
+    padding: 3px 0;
+    border-radius: 5px;
+    border: 1px solid #999;
+    box-shadow: 0 0 5px gray;
+    display: none;
+}
+
+.dropDown__buttons__active__projects::before,
+.dropDown__buttons__client__search::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    position: absolute;
+    top: -20%;
+    left: 7%;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+}
+
+.dropDown__buttons__active__projects a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 18px;
+    transition: all 0.1s ease;
+}
+
+
+
+.dropDown__buttons__client__search {
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    right: 0;
+    top: 110%;
+    width: 300px;
+    padding: 6px 0;
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 0 5px gray;
+    display: none;
+}
+
+.dropDown__buttons__dropDown__show {
+    display: flex;
+}
+
+.dropDown__buttons__client__search__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.dropDown__buttons__client__search__input input {
+    width: 280px;
+    padding: 10px 38px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+.dropDown__buttons__client__search__input .fa {
+    position: absolute;
+    top: 11%;
+    left: 8%;
+}
+
+.dropDown__buttons__client__search a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 0;
+    padding-left: 25px;
+    transition: all 0.1s ease;
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px 15%;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #999;
+    margin-top: 60px;
+}
+
+footer div {
+    display: flex;
+    align-items: baseline;
+}
+
+footer div:nth-child(1) p {
+    font-size: 13px;
+    color: #555;
+}
+
+footer div:nth-child(1) button {
+    margin-left: 15px;
+    transition: all 0.1s ease;
+}
+
+footer div:nth-child(2) a {
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.1s ease;
+}

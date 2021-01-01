@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timesheet</title>
+    <link rel="icon" type="image/png"
+        href="https://www.getharvest.com/assets/apple-touch-icon-3b0196d037cb2439496a001bac80a4647cb1f35cfa37b52d4c754adc2c041532.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="archived.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav__bar">
+            <div class="nav__bar__links">
+                <ul>
+                    <li><a href="#">Time</a></li>
+                    <li><a href="#">Expenses</a></li>
+                    <li class="nav__bar__links__hero"><a href="./projects.html">Projects</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Invoices</a></li>
+                    <li><a href="#">Manage</a></li>
+                </ul>
+            </div>
+            <div class="nav__bar__actions">
+                <a href="#">Help</a>
+                <a href="#">Settings</a>
+                <div class="nav__bar__actions__dropdown__button" id="nav__bar__actions__dropdown__button">
+                    <button>
+                        <img src="https://proxy.harvestfiles.com/production_harvestapp_public/uploads/users/avatar/003/561/355/092fef1ec994a51c9828b147545480b8f69f12d0/normal.?1609215247"" alt="
+                            avatar">
+                        <span>Naeem</span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="nav__bar__actions__dropdown__button__list"
+                        id="nav__bar__actions__dropdown__button__list">
+                        <div class="nav__bar__actions__dropdown__button__list__user__name">
+                            <h3>Naeem Shaik</h3>
+                            <p>Naeem</p>
+                        </div>
+                        <a href="#">My Profile</a>
+                        <a href="#">My Time Report</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Referrals</a>
+                        <hr />
+                        <a href="#">Apps</a>
+                        <a href="#">Integrations</a>
+                        <hr />
+                        <a href="../index.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div id="archieved__sheet">
+        <div class="topGrey__box">
+            <div class="time__button">
+                <button> <a href="timesheet.html">Timesheet</a></button>
+                <button><a href="pending.html">Pending Approval</a></button>
+                <button><a href="./unsubmitted.html">Unsubmitted</a></button>
+                <button><a href="archived.html">Archive</a></button>
+            </div>
+        </div>
+        <h1>Archived Timesheets</h1>
+
+        <section class="dropDown__buttons" id="dropDown__buttons">
+            <div class="dropDown__buttons__client" id="dropDown__buttons__client">
+                <button class="dropDown__buttons__client__filterButton" id="dropDown__buttons__client__filterButton">
+                    Naeem Shaik <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropDown__buttons__client__search" id="dropDown__buttons__client__search">
+                    <div class="dropDown__buttons__client__search__input">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="Search..." />
+                    </div>
+                    <a href="#">Naeem Shaik</a>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="archieved__box">You don’t have any archived timesheets yet.<br>
+            When your timesheets get approved, they’ll show up here.</div>
+    </div>
+
+    <footer>
+        <div>
+            <p>26 days left in your free trail</p>
+            <button><a href=" #">Upgrade</a></button>
+        </div>
+        <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <h2><a href="#">HARVEST</a></h2>
+        </div>
+    </footer>
+    
+    <script src="../innerContent.js"></script>
+</body>
+</html>
