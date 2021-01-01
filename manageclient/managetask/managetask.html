@@ -33,9 +33,9 @@
     .managetask__sections_trackcreateproject {
         padding: 12px;
         border: 1px solid grey;
-        width: 100vh;
+        width: 90vh;
         height: 55vh;
-        margin: 10px 220px;
+        margin: 10px 170px;
         color: #c1c1c1;
         font-size: 20px;
         line-height: 1.2em;
@@ -44,7 +44,7 @@
 
     .managetask_commontasks {
         color: #333333;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: bold;
     }
 
@@ -60,7 +60,8 @@
         flex: 1;
         color: grey;
         font-size: 12px;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 12px 102px;
     }
 
     .managetasks_projectstime {
@@ -68,8 +69,11 @@
         flex: 1;
         color: #918a88;
         font-size: 15px;
-        padding: 5px 98px;
+        padding: 2px 18px;
+    }
 
+    .managetasks_projectstimearchive {
+        margin-left: 120px;
     }
 
     .managetasks__projects {
@@ -81,7 +85,9 @@
     .managetask__editions {
         color: grey;
         font-size: 12px;
-        
+        padding: 3px;
+        margin-left: 20px;
+
     }
 
     .managetask__editions_p {
@@ -172,6 +178,7 @@
         display: flex;
         flex: 1;
         margin-left: 100px;
+        font-size: 13px;
     }
 
     .managetask__details__invoices>a {
@@ -194,7 +201,7 @@
     }
 
     .managetask__btn {
-        margin: 40px 198px
+        margin: 40px 154px
     }
 
     .managetask__btn>h1 {
@@ -205,7 +212,7 @@
 
     .managetask__btn>h1+button {
         text-align: center;
-        border: 2px solid wheat;
+        border: 1px solid white;
         text-align: center;
         margin: 10px 10px;
         width: 140px;
@@ -213,7 +220,7 @@
         border-radius: 8px;
         color: whitesmoke;
         background: linear-gradient(#4fb840, #14a000);
-        font-size: 15px;
+        font-weight: bold;
         cursor: pointer;
     }
 
@@ -240,6 +247,8 @@
     .managetask__btn>h1+button :hover {
         color: grey;
     }
+
+   
 </style>
 
 <body>
@@ -286,7 +295,7 @@
                     <div class="managetasks__projects">
                         <!-- form -->
 
-                        <div id="managetask_indiv"> .. </div>
+                        <div id="managetask_indiv"> </div>
                         <form id="managetask__form">
                             <div class="managetasks_projectstime">
                                 <div>
@@ -302,7 +311,7 @@
 
                                 <div class="managetasks_projectstime">
                                     <!-- <p>fs<p> -->
-                                    <div>
+                                    <div class="managetasks_projectstimearchive">
                                         <p id="managetask__rupees" class="managetask__editions managetask__editions_p">
                                             Rs </p>
                                     </div>
@@ -323,7 +332,6 @@
                 </div>
 
             </div>
-            <hr>
 
             <div class="managetask__sections_trialupgrade">
                 <div class="managetask__sections_trialleft">
@@ -338,30 +346,43 @@
             </div>
 
             <script>
-                    document.getElementById("managetask__archive").addEventListener("click", function () {
+                document.getElementById("managetask__archive").addEventListener("click", function () {
                     var managetask_archive = document.getElementById("managetask__archive_description");
                     var managetask_archive_text = document.createElement("p");
-                    managetask_archive_text.textContent = "Are you sure you want to archive Design?All tracked time will remain intact, but this task will become inactive for all projects. It will be moved to your Archived Tasks list.If you restore a task, you also need to restore it on your projects, if necessary. This will allow you to track time to that task, on that project.";
-                    managetask_archive.style.color = "white";
-                    managetask_archive.style.fontSize = "12px";
-                    managetask_archive.style.border = "2px solid red";
-                    managetask_archive.style.borderRadius = "9px";
+                    managetask_archive_text.textContent = "Are you sure you want to archiveDesign?All tracked time will remain intact, but this task will become inactive for all projects. It will be moved to your Archived Tasks list.If you restore a task, you also need to restore it on your projects, if necessary. This will allow you to track time to that task, on that project.";
+                    managetask_archive.style.color = "#333";
+                    managetask_archive.style.fontSize = "18px";
+                    managetask_archive.style.wordWrap= "wrap";                    
+                    managetask_archive.style.fontWeight = "bold";
+                    managetask_archive.style.border = "2px solid whitesmoke";
+                    managetask_archive.style.borderRadius = "5px";
                     managetask_archive.style.position = "absolute";
                     managetask_archive.style.marginTop = "90px";
                     managetask_archive.style.marginLeft = "-90px";
-                    managetask_archive.style.scrollBehavior = "auto";
-                    managetask_archive.style.width = "190px";
-                    managetask_archive.style.height = "190px";
-                    managetask_archive.style.backgroundColor = "grey";
-                    managetask_archive.style.boxShadow = "0 0 10px black";
-                    managetask_archive.style.overflow = " scroll";
+                    // managetask_archive.style.scrollBehavior = "auto";
+                    managetask_archive.style.letterSpacing = "1.2";
+                    managetask_archive.style.width = "400px";
+                    managetask_archive.style.height = "290px";
+                    managetask_archive.style.backgroundColor = "coral";
+                    managetask_archive.style.boxShadow = "6px 6px 6px 6px";
+                    // managetask_archive.style.overflow = " scroll";
+                    managetask_archive.style.opacity="0.8";
                     managetask_archive.style.left = "50%";
-                    managetask_archive.style.textAlign = "center";
+                    managetask_archive.style.textAlign = "left";
                     managetask_archive.style.transform = "translate(-50%, -50%)";
                     managetask_archive.style.transition = "5s";
 
                     var managetask_archive_cancel = document.createElement("button");
                     managetask_archive_cancel.textContent = "cancel";
+                    managetask_archive_cancel.style.color = "white";
+                    managetask_archive_cancel.style.width= "180px";
+                    managetask_archive_cancel.style.height= "40px";
+                    managetask_archive_cancel.style.backgroundColor = "lightgrey";
+                    
+                    managetask_archive_cancel.style.boxShadow= "6px solid red";
+                    managetask_archive_cancel.style.borderRadius = "7px";
+                    
+                    
                     managetask_archive_cancel.addEventListener("click", function () {
                         managetask_archive.style.display = "none";
                     })
@@ -371,8 +392,8 @@
 
 
 
-             
-               
+
+
                 var manage__task__user = document.getElementById("managetask__form");
                 manage__task__user.addEventListener("submit", function (event) {
                     event.preventDefault();
@@ -385,8 +406,11 @@
 
                 function loadData() {
                     event.preventDefault();
-                    var managetask_indiv = document.getElementById("managetask_indiv");
 
+
+
+                    var managetask_indiv = document.getElementById("managetask_indiv");
+                    
                     var managetask_indivform__form = document.createElement("div");
                     managetask_indivform__form.style.width = "320px";
                     managetask_indivform__form.style.height = "170px";
@@ -404,6 +428,7 @@
 
                     var managetask_indivform__indivform1 = document.createElement("div");
                     managetask_indivform__indivform1.style.display = "flex";
+
                     var managetask_indivform1_ruppes = document.createElement("p")
                     managetask_indivform1_ruppes.setAttribute("id", "ruppess")
                     managetask_indivform1_ruppes.textContent = "Rs"
@@ -417,8 +442,8 @@
                     var managetask_indivform1_perrupee = document.createElement("p")
                     managetask_indivform1_perrupee.textContent = "perhr"
                     managetask_indivform1_perrupee.style.fontSize = "12px";
-                    managetask_indivform1_perrupee.style.margin= "6px 12px";
-                    
+                    managetask_indivform1_perrupee.style.margin = "6px 12px";
+
 
 
                     var managetask_indivform__indivform3 = document.createElement("div");
@@ -438,17 +463,17 @@
                     managetask_indivform1_checkboxes.style.margin = "15px 15px";
                     var managetask_indivform1_checkboxtext = document.createElement("p")
                     managetask_indivform1_checkboxtext.textContent = "this is common task and should be added"
-                    managetask_indivform1_checkboxtext.style.margin= "15px 20px";
+                    managetask_indivform1_checkboxtext.style.margin = "15px 20px";
 
                     var managetask_indivform1_checkboxes2 = document.createElement("INPUT")
-                    managetask_indivform1_checkboxes2.setAttribute("type", "checkbox");                    
+                    managetask_indivform1_checkboxes2.setAttribute("type", "checkbox");
                     managetask_indivform1_checkboxes2.style.margin = "15px 15px";
                     managetask_indivform1_checkboxes2.style.a = "#";
                     managetask_indivform1_checkboxes2.setAttribute("class", "manageTaskupdating");
                     managetask_indivform1_checkboxes2.setAttribute("id", "managetask_updating_pmoney")
                     var managetask_indivform1_checkboxtext2 = document.createElement("p")
                     managetask_indivform1_checkboxtext2.textContent = "this is common task and should be added"
-                    managetask_indivform1_checkboxtext2.style.margin= "15px 20px";
+                    managetask_indivform1_checkboxtext2.style.margin = "15px 20px";
 
                     var managetask_indivform_update = document.createElement("button")
                     managetask_indivform_update.textContent = "update"
@@ -456,8 +481,9 @@
                     managetask_indivform_update.setAttribute("id", "manageTaskupdating")
 
                     var managetask_indivform_cancel = document.createElement("button")
-                    managetask_indivform_cancel.textContent = "cancel"
+                    managetask_indivform_cancel.textContent = "cancel";
                     managetask_indivform_cancel.setAttribute("id", "managetask_indivform_cancel");
+
 
 
                     managetask_indivform__indivformupdatebtn5.append(managetask_indivform_update, managetask_indivform_cancel)

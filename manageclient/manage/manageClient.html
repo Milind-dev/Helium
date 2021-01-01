@@ -33,7 +33,7 @@
     text-align: center;
     width: 100vh;
     height: 55vh;
-    margin: 10px 220px;
+    margin: 3px 220px;
     color: #c1c1c1;
     font-size: 20px;
     line-height: 1.2em;
@@ -44,7 +44,7 @@
 }
 
 .manageclient__sections_trialupgrade {
-    height: 60px;
+    height: 10px;
     background-color: #f9f9f9;
     color: whitesmoke;
     font-size: 12px;
@@ -124,7 +124,8 @@
 .manageclient__details__invoices {
     display: flex;
     flex: 1;
-    margin-left: 100px;
+    margin-left: 120px;
+    font-size: 14px;
 }
 
 .manageclient__details__invoices>a {
@@ -165,8 +166,11 @@
     color: whitesmoke;
     background: linear-gradient(#4fb840, #14a000);
     font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.2s;
 }
+
 
 .manageclient__btn>h1+button +select{
     text-align: center;
@@ -177,17 +181,22 @@
     height: 40px;
     border-radius: 6px;
     box-shadow: 2px;
+    background:linear-gradient(to left white, to right green);
     font-size: 15px;
     font-weight: bold;
-    color: grey;
+    color: gray;
     cursor: pointer;
 }
 .manageclient__impexports{
     border: 3px solid whitesmoke;
     box-shadow: 5px;
+    vertical-align: middle;
+    color: #555;
+    line-height: 13px;
 }
 .manageclient__btn>h1+button :hover {
     color: grey;
+
 }
 
 
@@ -206,10 +215,10 @@
             </div>
             <!-- <hr style="margin: 32px;width: 1100px;"> -->
             <div class="manageclient__btn">
-                <h1> Manage Client </h1>
+                <h1> Manage Clients </h1>
                 <button class="manageclient__sections_managebutton">+ New Client</button>
                 <select class="manageclient__impexp manageclient__impexports ">
-                    <option class="manageclient__impexports" value="first">Import CSV</option>
+                    <option class="manageclient__impexports" value="first">Import/Export</option>
                     <option class="manageclient__impexports" value="first">Import CSV</option>
                     <option class="manageclient__impexports" value="first">Export Excel</option>
                     <option class="manageclient__impexports" value="first">Export CSV</option>
@@ -221,8 +230,11 @@
                     There aren’t any active clients.<br/>
                     Create a client to <a href="#"> create project </a>get started.<br/></p>
             </div>
+            
             <div class="manageclient__sections_trialupgrade">
+                
                 <div class="manageclient__sections_trialleft">
+
                     <p> <span> 29 days </span> left in your free trial </p>
                     <button>upgrade</button>
                     <div class="manageclient__sections_privacyterms">
