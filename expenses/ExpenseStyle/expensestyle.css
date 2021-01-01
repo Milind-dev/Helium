@@ -9,7 +9,8 @@
 }
 
 #expenses__containers {
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+    background-color: white;
 }
 
 .expenses__sections_plus {
@@ -19,11 +20,13 @@
 }
 
 .expenses__sections__btn {
-    border: 2px solid grey;
+    border: 2px solid white;
     text-align: center;
     margin: 20px 120px;
     width: 140px;
     height: 40px;
+    box-sizing: content-box;
+
     border-radius: 6px 6px 6px 6px;
     color: grey;
     font-size: 14px;
@@ -39,6 +42,7 @@
     font-size: 20px;
     line-height: 1.2;
     border-radius: 10px;
+    background-color: #f4f4f4;
 }
 
 .expenses__sections_trackcreateproject>img {
@@ -48,10 +52,11 @@
 
 .expenses__sections_trackcreateproject>p+button {
     text-align: center;
-    border: 2px solid wheat;
+    border: 2px solid white;
     text-align: center;
     margin: 20px 120px;
     width: 140px;
+    box-sizing: content-box;
     height: 40px;
     border-radius: 10px;
     color: whitesmoke;
@@ -93,9 +98,10 @@
 
 .expenses__sections_trialleft>button {
     text-align: center;
-    border: 2px solid grey;
+    border: 2px solid white;
     border-radius: 5px;
     text-align: center;
+    box-sizing: content-box;
     width: 100px;
     height: 30px;
     color: #666666;

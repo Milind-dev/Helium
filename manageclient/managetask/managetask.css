@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+​body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#manageclient__containers {
+    background-color: white;
+}
+
+.managetask__sections_trackcreateproject {
+    padding: 12px;
+    border: 1px solid grey;
+    border-left: transparent;
+    border-right: transparent;
+    width: 90vh;
+    height: 53vh;
+    margin: 10px 170px;
+    color: #c1c1c1;
+    font-size: 20px;
+    line-height: 1.2em;
+    /* border-radius: 10px; */
+    padding: 10px 2px 190px;
+}
+.managetask__sections_trackcreateproject1{
+      height: auto;
+    /* border-radius: 10px; */
+    width: 620px;
+    background: #f4f4f4;
+}
+
+.managetask_commontasks {
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.managetask_commontask>p+p {
+    color: #918a88;
+    font-size: 14px;
+    font-weight: italic;
+}
+
+.managetask_defaulthr {
+    display: flex;
+    flex: 1;
+    color: grey;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 12px 102px;
+}
+
+.managetasks_projectstime {
+    display: flex;
+    flex: 1;
+    color: #918a88;
+    font-size: 15px;
+    padding: 2px 18px;
+    width: 120px;
+}
+
+.managetasks_projectstimearchive {
+    margin-left: 120px;
+}
+
+.managetasks__projects {
+    display: flex;
+    flex: 1;
+    padding: 2px;
+}
+
+.managetask__editions {
+    color: grey;
+    font-size: 12px;
+    padding: 3px;
+    margin-left: 20px;
+
+}
+
+.managetask__editions_p {
+    color: #918a88;
+    font-size: 14px;
+    font-weight: italic;
+}
+
+.managetask__sections_trialupgrade {
+    height: 60px;
+    background-color: #f9f9f9;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+.managetask__sections_trialleft {
+    display: flex;
+    flex: 1;
+    padding: 32px 3px;
+    margin: 120px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.managetask__sections_trialleft>button {
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    color: #666666;
+    box-sizing: content-box;
+    font-weight: bold;
+    box-sizing: content-box;
+    font-size: 14px;
+    margin-left: 12px;
+    cursor: all-scroll;
+    background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4);
+}
+
+.managetask__sections_trialleft>p {
+    text-align: center;
+    text-align: center;
+    margin-top: 7px;
+    color: grey;
+    font-size: 14px;
+}
+
+.managetask__sections_trialleft>p>span {
+    color: darkgrey;
+}
+
+.managetask__sections_privacyterms {
+    margin-left: 53vh;
+    padding: 2px;
+    margin-top: -10px;
+}
+
+.managetask__sections_privacyterms>.managetask__sections_privacylinks {
+    color: grey;
+    text-decoration: none;
+    padding-left: 11px;
+    font-size: 15px;
+}
+
+.managetask__sections_privacylinks:hover {
+    color: lightgrey;
+}
+
+#managetask_harvesting {
+    color: lightgrey;
+    font-size: 33px;
+}
+
+#managetask_harvesting:hover {
+    color: grey;
+    font-size: 33px;
+}
+
+.managetask__details {
+    color: grey;
+    padding: 12px;
+    width: 100%;
+    height: 5vh;
+    background-color: #eeeeee;
+}
+
+.managetask__details__invoices {
+    display: flex;
+    flex: 1;
+    margin-left: 100px;
+    font-size: 13px;
+}
+
+.managetask__details__invoices>a {
+    text-decoration: none;
+    color: grey;
+    padding: 12px;
+}
+
+.managetask__details__invoices>a:hover {
+    color: grey;
+    border-bottom: 2px solid orange;
+}
+
+.managetask__details__invoices>a>span {
+    color: black;
+}
+
+.managetask__details__invoices>a>span:hover {
+    color: orange;
+}
+
+.managetask__btn {
+    margin: 40px 154px
+}
+
+.managetask__btn>h1 {
+    color: #333333;
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+.managetask__btn>h1+button {
+    text-align: center;
+    border: 1px solid white;
+    text-align: center;
+    margin: 10px 10px;
+    width: 140px;
+    box-sizing: content-box;
+    height: 40px;
+    border-radius: 8px;
+    color: whitesmoke;
+    background: linear-gradient(#4fb840, #14a000);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.managetask__btn>h1+button+select {
+    text-align: center;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    margin: 10px 10px;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    cursor: pointer;
+}
+
+.managetask__impexports {
+    border: 3px solid whitesmoke;
+    box-shadow: 5px;
+}
+
+.managetask__btn>h1+button :hover {
+    color: grey;
+}
+.managetask__billable{
+    box-sizing: 12px;
+    box-shadow: 6px solid white;
+    width: 12px;
+    box-sizing: content-box;
+}

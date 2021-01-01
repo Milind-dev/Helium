@@ -32,11 +32,12 @@
 
 .reports__sections_trackcreateproject>p+button {
     text-align: center;
-    border: 2px solid wheat;
+    border: 2px solid white;
     text-align: center;
     margin: 20px 120px;
     width: 140px;
     height: 40px;
+    box-sizing: content-box;
     border-radius: 10px;
     color: whitesmoke;
     background: linear-gradient(#4fb840, #14a000);
@@ -66,8 +67,9 @@
 
 .reports__sections_trialleft>button {
     text-align: center;
-    border: 2px solid grey;
+    border: 2px solid white;
     border-radius: 5px;
+    box-sizing: content-box;
     text-align: center;
     width: 100px;
     height: 30px;
