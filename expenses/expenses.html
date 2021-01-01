@@ -1,0 +1,46 @@
+<!-- Expenses -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./ExpenseStyle/expensestyle.css" />
+</head>
+
+
+<body>
+    <div id="expenses__containers">
+        <div class="expenses__sections">
+            <div class="expenses__sections_newexpense">
+                <button type="button" class="expenses__sections__btn" id="expenses__sections__btns">
+                    <span class="expenses__sections_plus"> + New Expense</span></button>
+                <div id="expenses__sections_hiddenform">
+                </div>
+            </div>
+            <div class="expenses__sections_trackcreateproject">
+                <img src="./expenseimg/expenseimage1.png" alt="expenses__sections_img">
+                <p> Here’s where you’ll track your expenses!<br>
+                    To start, just add yourself to a project or create a new one. </p>
+                <button> create a project </button>
+            </div>
+            <div class="expenses__sections_trialupgrade">
+                <div class="expenses__sections_trialleft">
+                    <p> <span> 29 days </span> left in your free trial </p>
+                    <button>upgrade</button>
+                    <div class="expenses__sections_privacyterms">
+                        <a class="expenses__sections_privacylinks" href="#">Privacy</a>
+                        <a class="expenses__sections_privacylinks" href="#">Terms</a>
+                        <a class="expenses__sections_privacylinks" id="harvesting" href="#">Harvest</a>
+                    </div>
+                </div>
+            </div>
+
+    <script src="./ExpenseScript.js/script.js"></script>
+</body>
+</html>

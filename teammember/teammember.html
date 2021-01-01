@@ -1,0 +1,83 @@
+<!-- Expenses -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teammember</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./teammembercss/teammember.css"/>
+</head>
+
+
+<body>
+    <div id="teammember__containers">
+        <div class="expenses__sections">
+            <div class="teammember__sections_newexpense">
+                <button type="button" class="teammember__sections__btn" id="teammember__sections__btns">
+                    <span class="teammember__sections_plus"> + Add Person</span></button>
+                <div id="teammember__sections_hiddenform">
+                </div>
+            </div>
+            <div class="teammember__sections_trackcreateproject">
+                <img src="./teamimg/team-wizard-illustration@2x-12cf25cde77656446364c5503bcd780fb85994f4c1a643bcd048a8cd456876e2.png"
+                    alt="expenses__sections_img">
+                <p> Welcome to Team! Here you can review and edit time, and see how you’re doing<br>
+                    against capacity. That’s the number of hours per week you typically work.!
+                    <br><br>
+                <p>If you’re not working with a large team and this information<br>
+                    isn’t useful for you, feel free to turn this section off.
+                </p>
+
+
+                <div class="teammember__eachworkreview">
+                    <div class="teammember__eachworkreview__week">
+                        <p>How many hours do you usually work each week? </p>
+                        <select>
+                            <option> week </option>
+                            <option> 1 </option>
+                            <option> 2 </option>
+                            <option> 3 </option>
+                        </select>
+                    </div>
+                    <div class="teammember__eachworkreview__week">
+                        <p>When is your timesheet due each week?</p>
+                        <select>
+                            <option> No Preference </option>
+                            <option> Monday </option>
+                            <option> Tuesday </option>
+                            <option> Sunday </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="teammember__optionsetting">
+                    <p> You can always change these options from Settings. </p>
+                    <div class="teammemeber__optionsetting__btns"> 
+                        <button> All set show me team </button>
+                        <button> No thanks let me, turn off</button>
+                    </div>
+
+                    </p>
+                </p>
+                </div>
+            </div>
+            <div class="teammember__sections_trialupgrade">
+                <div class="teammember__sections_trialleft">
+                    <p> <span> 29 days </span> left in your free trial </p>
+                    <button>upgrade</button>
+                    <div class="teammember__sections_privacyterms">
+                        <a class="teammember__sections_privacylinks" href="#">Privacy</a>
+                        <a class="teammember__sections_privacylinks" href="#">Terms</a>
+                        <a class="teammember__sections_privacylinks" id="teammember_harvesting" href="#">Harvest</a>
+                    </div>
+                </div>
+            </div>
+
+            <script src="./ExpenseScript.js/script.js"></script>
+</body>
+
+</html>
