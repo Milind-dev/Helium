@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +13,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="timesheet.css">
 </head>
+
 <body>
     <header>
         <nav class="nav__bar">
             <div class="nav__bar__links">
                 <ul>
                     <li class="nav__bar__links__hero"><a href="../Time/timesheet.html">Time</a></li>
-                    <li ><a href="#">Expenses</a></li>
-                    <li ><a href="../projects/projects.html">Projects</a></li>
-                    <li ><a href="#">Team</a></li>
-                    <li ><a href="#">Reports</a></li>
-                    <li ><a href="#">Invoices</a></li>
-                    <li ><a href="#">Manage</a></li>
+                    <li><a href="#">Expenses</a></li>
+                    <li><a href="../projects/projects.html">Projects</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Invoices</a></li>
+                    <li><a href="#">Manage</a></li>
                 </ul>
             </div>
             <div class="nav__bar__actions">
@@ -71,10 +73,11 @@
     <div class="day__page" id="day__page">
         <div class="middle__box">
             <button class="leftarrow__button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-            <button class="rightarrow__button" ><i class="fa fa-chevron-right" aria-hidden="true"></i></button><strong id="change__monday">Today:Friday, 1 Jan</strong><span id="hide__text"></span>
-            
+            <button class="rightarrow__button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button><strong
+                id="change__monday">Today:Friday, 1 Jan</strong><span id="hide__text"></span>
+
             <button class="calender__button"><i class="fa fa-calendar" aria-hidden="true"></i></button>
-            <button class="day__button" >Day</button>
+            <button class="day__button">Day</button>
             <button class="day__button" onclick="switchBetween()">Week</button>
         </div>
         <div>
@@ -84,32 +87,39 @@
             <button class="weekdays__button" onclick="Wednesday()">W<div>0:00</div></button>
             <button class="weekdays__button" onclick="Thursday()">Th<div>0:00</div></button>
             <button class="weekdays__button" onclick="Friday()">F<div>0:00</div></button>
-            <button class="weekdays__button" onclick="Saturday()" >S<div>0:00</div></button>
+            <button class="weekdays__button" onclick="Saturday()">S<div>0:00</div></button>
             <button class="weekdays__button" onclick="Sunday()">Su<div>0:00</div></button>
             <!-- <span class="totalWeek__button">Total: 0:00</span> -->
-    
+
             <div class="daysproject__box">
-                <img src="https://cache.harvestapp.com/assets/onboarding/landing-timesheets-day@2x-ba92c8a231563661a31ba7af8e20e4dd1b19e6286b94065e7a45aec949752ce6.png" 
-                alt="center bear image" class="bear__image">
-                <p class="paragraphBelow__bearimage">Time tracking so simple, you’ll bearly notice it.<br> You’re looking at your timesheet’s Day view, where <br> you can track your day down to the minute.</p>
-                <button class="createProject__button">Create a New Project</button>
-            </div>       
+                <img src="https://cache.harvestapp.com/assets/onboarding/landing-timesheets-day@2x-ba92c8a231563661a31ba7af8e20e4dd1b19e6286b94065e7a45aec949752ce6.png"
+                    alt="center bear image" class="bear__image">
+                <p class="paragraphBelow__bearimage">Time tracking so simple, you’ll bearly notice it.<br> You’re
+                    looking at your timesheet’s Day view, where <br> you can track your day down to the minute.</p>
+                <button class="createProject__button" id="createProject__button__timePage">
+                    <a href="../projects/projects.html">Create a New
+                        Project</a></button>
+            </div>
         </div>
     </div>
     <div class="week__page" id="week__page">
         <div class="weeksmiddle__box">
-            <button class="weeksleftarrow__button" id="weeksleftarrow" onclick="lastweekSwitch()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-            <button class="weeksrightarrow__button" id="weesrightarrow" onclick="nextweekSwitch()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button><strong >This Week:</strong><span id="hide__week"> 28 Dec 2020 - 03 Jan 2021</span>
-            
+            <button class="weeksleftarrow__button" id="weeksleftarrow" onclick="lastweekSwitch()"><i
+                    class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="weeksrightarrow__button" id="weesrightarrow" onclick="nextweekSwitch()"><i
+                    class="fa fa-chevron-right" aria-hidden="true"></i></button><strong>This Week:</strong><span
+                id="hide__week"> 28 Dec 2020 - 03 Jan 2021</span>
+
             <button class="weekscalender__buttonforweek"><i class="fa fa-calendar" aria-hidden="true"></i></button>
             <button class="weeksday__button">Day</button>
-            <button class="weeksday__button" >Week</button>
+            <button class="weeksday__button">Week</button>
         </div>
 
         <div class="weekproject__box">
-            <img src="https://cache.harvestapp.com/assets/onboarding/landing-timesheets-week@2x-8ea92aef428a0e48a56b1161d1985bbf6e975185378be595b89fdd3f7a0b343b.png" 
-            alt="center bear image" class="weekBear__image">
-            <p class="paragraphBelow__bearimage">This is the Week view of your timesheets, <br> perfect for speedily entering a lot of time at once!</p>
+            <img src="https://cache.harvestapp.com/assets/onboarding/landing-timesheets-week@2x-8ea92aef428a0e48a56b1161d1985bbf6e975185378be595b89fdd3f7a0b343b.png"
+                alt="center bear image" class="weekBear__image">
+            <p class="paragraphBelow__bearimage">This is the Week view of your timesheets, <br> perfect for speedily
+                entering a lot of time at once!</p>
             <button class="createProject__button">Create a New Project</button>
         </div>
         <button class="newRow__button">+ New Row</button>
@@ -126,11 +136,14 @@
             <h2><a href="#">HARVEST</a></h2>
         </div>
     </footer>
-    
+
 
 
 
     <script src="timesheet.js"></script>
-    
+    <script src="../innerContent.js"></script>
+    <script src="../project_charts.js"></script>
+
 </body>
+
 </html>

@@ -142,11 +142,9 @@ body {
 
 
 /* Buttons Section */
-.project__action {
-    margin-top: 7vh;
-}
 
 .project__action {
+    margin-top: 7vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,6 +193,13 @@ footer div:nth-child(1) button {
 .dropDown__buttons button,
 footer div:nth-child(1) button a {
     color: #555;
+}
+
+.project__action__back__button {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    display: none;
 }
 
 .project__action__search {
@@ -846,9 +851,14 @@ footer div:nth-child(1) button a {
 
 .project__form__action__save {
     background-color: #3BA52B;
-    color: white;
     border: none;
+
+}
+
+.project__form__action__save a {
     font-weight: 500;
+    color: white;
+    text-decoration: none;
 }
 
 .project__form__action__cancel {

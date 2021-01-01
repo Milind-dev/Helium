@@ -83,6 +83,8 @@ billableButton.addEventListener("click", () => {
 
 let newProjectButton1 = document.getElementById("createProject__button__1");
 let newProjectButton2 = document.getElementById("createProject__button__2");
+let newProjectButtonTimePage = document.getElementById("createProject__button__timePage");
+
 let dropDownButtonsSection = document.getElementById("dropDown__buttons");
 let createProjectSection = document.getElementById("createProject");
 let projectForm = document.getElementById("project__form");
@@ -101,6 +103,7 @@ const createNewProject = () => {
 //Event Listener
 newProjectButton1.addEventListener("click", createNewProject);
 newProjectButton2.addEventListener("click", createNewProject);
+// newProjectButtonTimePage.addEventListener("click", createNewProject);
 
 
 
@@ -248,7 +251,19 @@ const saveProjectDetails = () => {
         projectTasks.push(newProjectTasks[i].innerText);
     }
 
+
+
+    // console.log(newProjectObject);
+
+    if (localStorage.getItem("newProjectList")) {
+        projectStoredList = JSON.parse(localStorage.getItem("newProjectList"));
+    } else {
+        projectStoredList = [];
+    }
+
+
     let newProjectObject = {
+        "id": projectStoredList.length,
         "clientName": clientName,
         "projectName": projectName,
         "projectCode": projectCode,
@@ -261,18 +276,15 @@ const saveProjectDetails = () => {
         "projectTeam": projectTeam
     }
 
-    // console.log(newProjectObject);
-
-    if (localStorage.getItem("newProjectList")) {
-        projectStoredList = JSON.parse(localStorage.getItem("newProjectList"));
-    } else {
-        projectStoredList = [];
-    }
-
     projectStoredList.push(newProjectObject);
 
     localStorage.setItem("newProjectList", JSON.stringify(projectStoredList))
-    console.log(projectStoredList)
+    // console.log(projectStoredList);
+    document.getElementById("dropDown__buttons__active__projects__count").innerText = projectStoredList.length;
+    document.getElementById("dropDown__buttons__active__projects__button__count").innerText = projectStoredList.length;
+
+    document.querySelector(".project__action__buttons").style.display = "none";
+    document.querySelector(".project__action__back__button").style.display = "block";
 }
 
 

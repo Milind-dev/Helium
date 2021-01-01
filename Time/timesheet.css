@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     box-sizing: border-box;
 }
 
@@ -146,12 +146,12 @@
 }
 
 .time__button {
-    border: 1px ;
+    border: 1px;
     margin-left: 16%;
 }
 
-.time__button > button {
-    border: 1px ;
+.time__button>button {
+    border: 1px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -162,7 +162,7 @@
     cursor: pointer;
 }
 
-.time__button > button > a {
+.time__button>button>a {
     color: grey;
     text-decoration: none;
 }
@@ -180,32 +180,32 @@
     margin: 3% 0 2%;
 }
 
-.middle__box > .leftarrow__button {
+.middle__box>.leftarrow__button {
     height: 36px;
     width: 2.5%;
     margin-left: 23%;
     cursor: pointer;
 }
 
-.middle__box > .rightarrow__button {
+.middle__box>.rightarrow__button {
     height: 36px;
     width: 2.5%;
     margin-right: 5px;
     cursor: pointer;
 }
 
-.middle__box > strong {
+.middle__box>strong {
     font-size: 25px;
-    border: 1px ;
+    border: 1px;
     width: 17%;
 }
 
-.middle__box > span {
+.middle__box>span {
     font-size: 25px;
     margin-left: 5px;
 }
 
-.calender__button{
+.calender__button {
     position: relative;
     height: 20px;
     height: 36px;
@@ -215,13 +215,13 @@
     cursor: pointer;
 }
 
-.middle__box > .day__button{
+.middle__box>.day__button {
     height: 36px;
     width: 60px;
     cursor: pointer;
 }
 
-.timeTrackingActivating__button{
+.timeTrackingActivating__button {
     position: absolute;
     height: 65px;
     width: 4.2%;
@@ -251,7 +251,7 @@
     cursor: pointer;
 }
 
-.day__page > div > .totalWeek__button {
+.day__page>div>.totalWeek__button {
     border: 1px solid grey;
     width: 8.9%;
     height: 45px;
@@ -293,14 +293,14 @@
     margin: 3% 0 2%;
 }
 
-.weeksmiddle__box > .weeksleftarrow__button{
+.weeksmiddle__box>.weeksleftarrow__button {
     height: 36px;
     width: 2.5%;
     margin-left: 16.5%;
     cursor: pointer;
 }
 
-.weeksmiddle__box > .weeksrightarrow__button {
+.weeksmiddle__box>.weeksrightarrow__button {
     height: 36px;
     width: 2.5%;
     margin-right: 5px;
@@ -321,11 +321,11 @@
     cursor: pointer;
 }
 
-.weeksmiddle__box > strong {
+.weeksmiddle__box>strong {
     font-size: 25px;
 }
 
-.weeksmiddle__box > span {
+.weeksmiddle__box>span {
     font-size: 25px;
     margin-left: 5px;
 }
@@ -355,15 +355,21 @@
 }
 
 .createProject__button {
-    height: 35px;
-    width: 25%;
+    /* height: 35px; */
+    /* width: 25%; */
+    padding: 10px;
     background-color: #3CB12B;
-    color: #EEEEEE;
     border: 1px solid #3CB12B;
     border-radius: 3px;
     outline: #3CB12B;
     margin-top: 3%;
     cursor: pointer;
+}
+
+.createProject__button a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 .newRow__button {
@@ -388,7 +394,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #999;
-    margin-top: 60px;
+    margin-top: 100px;
+}
+
+footer div:nth-child(1) button {
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: linear-gradient(#ffffff, #f1f1f1);
+    border: 1px solid #999;
+    margin-left: 15px;
+    transition: all 0.1s ease;
 }
 
 footer div {
@@ -396,19 +413,38 @@ footer div {
     align-items: baseline;
 }
 
+
 footer div:nth-child(1) p {
     font-size: 13px;
     color: #555;
 }
 
-footer div:nth-child(1) button {
-    margin-left: 15px;
-    transition: all 0.1s ease;
-}
 
 footer div:nth-child(2) a {
     color: rgb(156, 156, 156);
     text-decoration: none;
     margin-left: 15px;
     transition: all 0.1s ease;
+    color: #555;
+
+}
+
+
+
+
+
+
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
 }

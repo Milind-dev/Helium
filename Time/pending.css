@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     box-sizing: border-box;
 }
 
@@ -145,12 +145,12 @@
 }
 
 .time__button {
-    border: 1px ;
+    border: 1px;
     margin-left: 16%;
 }
 
-.time__button > button {
-    border: 1px ;
+.time__button>button {
+    border: 1px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -161,7 +161,7 @@
     cursor: pointer;
 }
 
-.time__button > button > a {
+.time__button>button>a {
     color: grey;
     text-decoration: none;
 }
@@ -178,10 +178,12 @@ h1 {
 
 
 .pendingData__box {
+    width: 67%;
     border: 1px solid #EEEEEE;
     border-radius: 4px;
     background-color: #EEEEEE;
-    margin: 0 16%;
+    /* margin: 0 16%; */
+    margin: auto;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -205,6 +207,17 @@ h1 {
     align-items: center;
     margin: 30px 18% 20px 15%;
     position: relative;
+}
+
+.dropDown__buttons__active__Button,
+.dropDown__buttons__client__filterButton {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropDown__buttons__active__Button {
+    margin-left: 15px;
 }
 
 .dropDown__buttons__active__projects {
@@ -329,4 +342,24 @@ footer div:nth-child(2) a {
     text-decoration: none;
     margin-left: 15px;
     transition: all 0.1s ease;
+}
+
+
+
+
+
+
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
 }

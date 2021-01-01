@@ -22,7 +22,7 @@
         <nav class="nav__bar">
             <div class="nav__bar__links">
                 <ul>
-                    <li><a href="#">Time</a></li>
+                    <li><a href="../Time/timesheet.html">Time</a></li>
                     <li><a href="#">Expenses</a></li>
                     <li class="nav__bar__links__hero"><a href="./projects.html">Projects</a></li>
                     <li><a href="#">Team</a></li>
@@ -72,6 +72,12 @@
             <button class="project__action__buttons__import"><a href="#">Import</a></button>
             <button class="project__action__buttons__export"><a href="#">Export</a></button>
         </div>
+        <div class="project__action__back__button">
+            <p>
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Back to Projects
+            </p>
+        </div>
         <div class="project__action__search">
             <i class="fa fa-search" aria-hidden="true"></i>
             <input type="text" placeholder="Search by client or project name" />
@@ -82,10 +88,11 @@
     <section class="dropDown__buttons" id="dropDown__buttons">
         <div class="dropDown__buttons__active" id="dropDown__buttons__active">
             <button class="dropDown__buttons__active__Button">
-                Active Projects (<span>1</span>) <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                Active Projects (<span id="dropDown__buttons__active__projects__button__count">0</span>) <i
+                    class="fa fa-chevron-down" aria-hidden="true"></i>
             </button>
             <div class="dropDown__buttons__active__projects" id="dropDown__buttons__active__projects">
-                <a href="#">Active Projects (<span>0</span>)</a>
+                <a href="#">Active Projects (<span id="dropDown__buttons__active__projects__count">0</span>)</a>
                 <a href="#">Budgeted Projects (<span>0</span>)</a>
                 <a href="#">Archieved Projects (<span>0</span>)</a>
             </div>
@@ -317,10 +324,57 @@
             <p>Need to add other people to this project? <a href="#">Invite them</a> to Harvest!</p>
         </div>
         <div class="project__form__action">
-            <button class="project__form__action__save" id="project__form__action__save">Save Project</button>
+            <button class="project__form__action__save" id="project__form__action__save">
+                <a href="../Time/timesheet2.html">Save Project</a>
+            </button>
             <button class="project__form__action__cancel" id="project__form__action__cancel">Cancel</button>
         </div>
     </section>
+
+
+    <!-- <section class="project__graph" id="project__graph">
+        <p class="project__graph__client"></p>
+        <div class="project__graph__details">
+            <div class="project__graph__details__text">
+                <h3></h3>
+                <span></span>
+            </div>
+            <div class="project__graph__details__button">
+                <button class="project__graph__details__button__edit">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    Edit Project
+                </button>
+                <div>
+                    <button class="project__graph__details__button__actions">
+                        Actions
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="project__graph__details__button__actions__div">
+                        <a href="#">Pin</a>
+                        <a href="#">Duplicate</a>
+                        <a href="#">Archive</a>
+                        <a href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project__graph__dates">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <p></p><span> - </span>
+            <p></p>
+        </div>
+    </section>
+
+
+
+    <canvas id="mixed-chart" width="100" height="30"></canvas> -->
+
+
+
+
+
+
+
 
 
     <footer>
@@ -335,8 +389,9 @@
         </div>
     </footer>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script src="../innerContent.js"></script>
+    <script src="../project_charts.js"></script>
 </body>
 
 </html>

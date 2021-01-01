@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     box-sizing: border-box;
 }
 
@@ -145,12 +145,12 @@
 }
 
 .time__button {
-    border: 1px ;
+    border: 1px;
     margin-left: 16%;
 }
 
-.time__button > button {
-    border: 1px ;
+.time__button>button {
+    border: 1px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -161,7 +161,7 @@
     cursor: pointer;
 }
 
-.time__button > button > a {
+.time__button>button>a {
     color: grey;
     text-decoration: none;
 }
@@ -173,7 +173,8 @@
 
 h1 {
     font-size: 26px;
-    margin: 3% 26% 1%;
+    margin-left: 15%;
+    margin-top: 15px;
 }
 
 .archieved__box {
@@ -181,7 +182,7 @@ h1 {
     border-radius: 4px;
     background-color: #EEEEEE;
     margin: 0 26%;
-    height: 180px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -248,6 +249,12 @@ h1 {
     position: absolute;
     top: 11%;
     left: 8%;
+}
+
+.dropDown__buttons__client__filterButton {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .dropDown__buttons__client__search a {

@@ -1,15 +1,15 @@
-
 * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     box-sizing: border-box;
 }
 
-/* body {
-    background-color: rgba(0, 0, b lue, alpha);
-} */
+body {
+    /* background-color: rgba(0, 0, b lue, alpha); */
+    position: relative;
+}
 
 .nav__bar {
     position: fixed;
@@ -153,12 +153,12 @@
 }
 
 .time__button {
-    border: 1px ;
+    border: 1px;
     margin-left: 16%;
 }
 
-.time__button > button {
-    border: 1px ;
+.time__button>button {
+    border: 1px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -169,7 +169,7 @@
     cursor: pointer;
 }
 
-.time__button > button > a {
+.time__button>button>a {
     color: grey;
     text-decoration: none;
 }
@@ -187,32 +187,32 @@
     margin: 3% 0 2%;
 }
 
-.middle__box > .leftarrow__button {
+.middle__box>.leftarrow__button {
     height: 36px;
     width: 2.5%;
     margin-left: 22%;
     cursor: pointer;
 }
 
-.middle__box > .rightarrow__button {
+.middle__box>.rightarrow__button {
     height: 36px;
     width: 2.5%;
     margin-right: 5px;
     cursor: pointer;
 }
 
-.middle__box > strong {
+.middle__box>strong {
     font-size: 25px;
-    border: 1px ;
+    border: 1px;
     width: 17%;
 }
 
-.middle__box > span {
+.middle__box>span {
     font-size: 25px;
     margin-left: 5px;
 }
 
-.calender__button{
+.calender__button {
     height: 36px;
     width: 2.5%;
     margin-left: 21%;
@@ -220,18 +220,18 @@
     cursor: pointer;
 }
 
-.middle__box > .day__button{
+.middle__box>.day__button {
     height: 36px;
     width: 60px;
     cursor: pointer;
 }
 
-.timeTrackingActivating__button{
+.timeTrackingActivating__button {
     position: absolute;
     height: 65px;
     width: 4.2%;
     margin-left: 16%;
-    top: 25.5%;
+    top: 14%;
     font-size: 43px;
     background-color: #3CB12B;
     color: white;
@@ -258,7 +258,7 @@
     cursor: pointer;
 }
 
-.day__page > div > .totalWeek__button {
+.day__page>div>.totalWeek__button {
     border: 1px solid grey;
     width: 8.9%;
     height: 45px;
@@ -311,14 +311,14 @@
     margin: 3% 0 2%;
 }
 
-.weeksmiddle__box > .weeksleftarrow__button{
+.weeksmiddle__box>.weeksleftarrow__button {
     height: 36px;
     width: 2.5%;
     margin-left: 16.5%;
     cursor: pointer;
 }
 
-.weeksmiddle__box > .weeksrightarrow__button {
+.weeksmiddle__box>.weeksrightarrow__button {
     height: 36px;
     width: 2.5%;
     margin-right: 5px;
@@ -339,11 +339,11 @@
     cursor: pointer;
 }
 
-.weeksmiddle__box > strong {
+.weeksmiddle__box>strong {
     font-size: 25px;
 }
 
-.weeksmiddle__box > span {
+.weeksmiddle__box>span {
     font-size: 25px;
     margin-left: 5px;
 }
@@ -431,10 +431,12 @@ footer div:nth-child(2) a {
 /* Css for Popup Box  */
 
 .popUp__container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.295);
     display: none;
+    position: absolute;
+    top: 0;
 }
 
 .popup__box {
@@ -447,7 +449,7 @@ footer div:nth-child(2) a {
     left: 33%;
     backdrop-filter: blur(5);
     background-color: white
-}   
+}
 
 .newTimeEntry__box {
     border: 1px solid gray;
@@ -461,7 +463,7 @@ footer div:nth-child(2) a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .popup__content {
@@ -470,17 +472,28 @@ footer div:nth-child(2) a {
     margin: 4% 4%;
 }
 
-.popup__content > div > p{
+.popup__content>div>p {
     font-size: 14px;
     color: #555;
 }
 
-.popup__content > div > select {
+.popup__content>div>select {
     font-size: 16px;
     padding: 10px 15px;
     margin: 7px 0;
     width: 100%;
     cursor: pointer;
+}
+
+.popup__content input {
+    width: 350px;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.popup__content input:nth-of-type(2) {
+    width: 126px;
 }
 
 .popup__option {
@@ -492,6 +505,10 @@ footer div:nth-child(2) a {
     border-radius: 4px;
     padding: 1%;
 }
+
+
+
+
 
 .startTimer__button {
     height: 40px;
@@ -518,36 +535,52 @@ footer div:nth-child(2) a {
 } */
 
 
-.timer__cardlist{
+.timer__cardlist {
     width: 55%;
     margin: auto;
+
+}
+
+.timer__cardlistItem {
     border: 1px solid #999;
     border-left: none;
     border-right: none;
+    margin-top: 10px;
     padding: 5px;
 }
 
-.timer__cardlistItem, .timercard__listItem__right {
+
+.timer__cardlistItem,
+.timercard__listItem__right {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.timercard__listItem__right  img {
-    width: 25px;
+.graph__link {
+    text-decoration: none;
+    font-size: 17px;
+    color: green;
+}
+
+.timercard__listItem__right img {
+    width: 17px;
     padding-top: 5px;
+    border-radius: 50%;
 }
 
 #statingTime {
-    background-color: #2E90D3;
+    /* background-color: #2E90D3; */
+    color: black;
     border: 1px solid #2E90D3;
+    /* padding: 10px; */
     border-radius: 2px;
-    color: white;
     margin-left: 15px;
     margin-right: 10px;
     width: 80px;
     font-size: 15px;
     outline: none;
+    cursor: pointer;
 }
 
 #timerStop {
@@ -556,8 +589,11 @@ footer div:nth-child(2) a {
     font-size: 15px;
     margin-left: 15px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .timercard__listItem__right .fa {
-    width: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 6px;
 }
