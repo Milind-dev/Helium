@@ -19,7 +19,7 @@
 }
 
 .expenses__sections__btn {
-    border: 2px solid grey;
+    border: 2px solid white;
     text-align: center;
     margin: 20px 120px;
     width: 140px;
@@ -71,6 +71,7 @@
     background-color: #f9f9f9;
     color: whitesmoke;
     font-size: 12px;
+    border: 1px solid white;
 }
 .hidden__cards:before{
   content: "";
@@ -94,7 +95,7 @@
 
 .expenses__sections_trialleft>button {
     text-align: center;
-    border: 2px solid grey;
+    border: 1px solid white;
     border-radius: 5px;
     text-align: center;
     width: 100px;
@@ -103,7 +104,7 @@
     font-weight: bold;
     font-size: 14px;
     margin-left: 12px;
-    cursor: all-scroll;
+    cursor: pointer;
     background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4)
 }
 

@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+​body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#teammember__containers {
+    background-color: white;
+}
+
+.teammember__sections_plus {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: not-allowed;
+    background: linear-gradient(#4daa21, #4daa21);
+    color: white;
+}
+
+.teammember__sections__btn {
+    border: transparent;
+    text-align: center;
+    margin: 20px 120px;
+    width: 140px;
+    height: 35px;
+    border-radius: 6px 6px 6px 6px;
+    color: grey;
+    font-size: 16px;
+    background: linear-gradient(#4daa21, #4daa21);
+
+}
+
+.teammember__sections_trackcreateproject {
+    border: 1px solid grey;
+    text-align: center;
+    width: 160vh;
+    height: 105vh;
+    margin: 10px 120px;
+    color: #c1c1c1;
+    font-size: 20px;
+    line-height: 1.2;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.teammember__sections_trackcreateproject>img {
+    width: 410px;
+    margin-top: 42px;
+}
+
+.teammember__sections_trackcreateproject>div+button {
+    text-align: center;
+    border: 2px solid wheat;
+    text-align: center;
+    margin: 20px 120px;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background: linear-gradient(#4fb840, #14a000);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.teammember__sections_trackcreateproject>p+button :hover {
+    color: grey;
+}
+
+.teammember__sections_trialupgrade {
+    height: 120px;
+    background-color: #f9f9f9;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+.teammember__sections_trialleft {
+    display: flex;
+    flex: 1;
+    padding: 32px 3px;
+    margin: 120px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.teammember__sections_trialleft>button {
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 12px;
+    cursor: pointer;
+    background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4)
+}
+
+.teammember__sections_trialleft>p {
+    text-align: center;
+    text-align: center;
+    margin-top: 7px;
+    color: grey;
+    font-size: 14px;
+}
+
+.teammember__sections_trialleft>p>span {
+    color: darkgrey;
+}
+
+.teammember__sections_privacyterms {
+    margin-left: 83vh;
+    padding: 2px;
+    margin-top: -10px;
+}
+
+.teammember__sections_privacyterms>.teammember__sections_privacylinks {
+    color: grey;
+    text-decoration: none;
+    padding-left: 11px;
+    font-size: 15px;
+}
+
+.teammember__sections_privacylinks:hover {
+    color: lightgrey;
+}
+
+#teammember_harvesting {
+    color: lightgrey;
+    font-size: 33px;
+}
+
+#teammember_harvesting:hover {
+    color: grey;
+    font-size: 33px;
+}
+
+.teammember__sections_newexpense {
+    background-color: lightgrey;
+}
+
+.teammember__eachworkreview {
+    width: 590px;
+    /* height: 130px; */
+    /* border: 1px solid red; */
+    background-color: #fffbde;
+    margin:12px 210px;
+}
+
+.teammember__eachworkreview > .teammember__eachworkreview__week{
+    display: flex;
+    flex: 1;
+    width: 590px;
+    height: 60px;
+    border: 1px solid #deca00;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 16px;
+    color: #333333;
+}
+.teammember__eachworkreview__week > p + select {
+    border: 2px solid wheat;
+    text-align: center;
+    border-radius: 5px;
+    color: #333333;
+    background: linear-gradient(white, white);
+    font-size: 14px;
+    font-weight: inherit;
+    cursor: pointer;
+    
+}
+.teammember__optionsetting{
+    padding: 12px;
+    margin: 2px 12px;
+}
+
+.teammember__optionsetting > p {
+    color: #888888;
+    font-size: 12px;
+    padding: 12px;
+}
+.teammemeber__optionsetting__btns > button {
+    color: white;
+    font-size: 16px;
+    width: 212px;
+    height: 42px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #4daa21;
+    margin:12px 8px;
+    cursor: pointer;
+}
+.teammemeber__optionsetting__btns > button + button{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 212px;
+    height: 42px;
+    /* padding-bo: 12px; */
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color:grey;
+}
