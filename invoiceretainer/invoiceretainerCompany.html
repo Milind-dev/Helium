@@ -12,77 +12,106 @@
         flex-direction: column;
         font-size: 15px;
         padding-top: 7px;
-        background-color: grey;
+        background-color: #f4f4f4;
         width: 250px;
         height: auto;
+        
     }
     .invoice__retailer__sidelinks > a{
         text-decoration: none;
         color:white;
         padding:12px;
         margin: center;
+        color: #333;
     }
     .invoice__retailer__sidelinks > a:hover{
-        color: white;
+        color: black;
         transition: 1.0s;
-        font-size: 22px;
-        border-bottom:2px solid orange;
-
+        font-size: 13px;
+        border-left:2px solid orange;
+        background-color: white;
     }
 
     .invoice__retailer__companyinfo{
-        color: grey;
-        font-size: 14px;
+        color: #333540;
+        font-size: 11px;
     }
     .invoice__retailer__addnameaddress{
         display: flex;
         flex: 1;
-        padding: 12px;
-        color:#666
+        padding: 2px;
+        color:#666;
+        font-size: 12px;
+        letter-spacing: 0.1em;
     }
 
     .invoice__retailer__addnameaddress > input{
-        width: 202px;
-        height: 18px;
+        width: 250px;
+        height: 20px;
         margin:  14px 22vh;
+        border-radius: 3px;
+        border:1px solid #333;
     }
 
     .invoice__retailer__addnameaddress > p + textarea{
-        width: 202px;
-        height: 58px;
+        width: 232px;
+        height: 89px;
         margin:  14px 125px;
         padding: 12px;
+        border-radius: 3px;
+        border:1px solid #333;
     }
     .invoice__retailer__addnameaddress  > button{
-        margin:12px 160px;
-        background-color: lightgreen;
+        margin:12px 180px;
+        background-color: #50b030;
         border-radius: 5px;
         box-shadow: 2px;
         border: white;
         width: 250px;
         height: 40px;
         color: white;
+        cursor: pointer;
+    }
+    .invoice__retailer__addnameaddress > p{
+        font-size: 13px;
+        font-weight: bold;
     }
     .invoice__retailer__addsendmessages{
         color: #666;
-        margin: 120px 12px;
+        margin: 120px 2px;
+        font-size: 13px;
     }
     .invoice__retailer__addsendmessages{
         /* background : -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); */
-    background: linear-gradient(#fff, #eee);
+    /* background: linear-gradient(#fff, #eee); */
     color: #877060;
     }
 
+    .invoice__retailer__addsendmessages > h3 {
+        font-size: 19px;
+    }
+    .invoice__retailer__addsendmessages > p + button{
+        color: #333;
+        border-radius: 5px;
+        border: 1px solid white;
+        box-sizing: content-box;
+        width: 80px;
+        height: 20px;
+        padding: 12px;
+        cursor: pointer;
+    }
 
     .invoice__retailer__companystatuslist{
         position: absolute;
         top: 13px;
         left: 320px;
-}
-.invoice__retailer__addinvoices{
-    height: 30vh;
-}
-
+    }
+    .invoice__retailer__addinvoices{
+        height: 30vh;
+    }
+    .invoice__retailer__container{
+        margin: 35px 20px;
+    }
 
 
 </style>
@@ -106,11 +135,11 @@
         
         <div class="invoice__retailer__companyconfig">
             <div class="invoice__retailer__companyinfo">
-                <h1> Company Information</h1>
+                <h1>Configure Company Information</h1>
             </div>
             <p>Information about your company, which automatically shows up on your next invoice.</p>
         </div>
-        <hr style="width: 530px;margin-left:20px;">
+        <hr style="width: 620px;margin-left:0px;">
 
         <div class="invoice__retailer__addinvoices">
             <div class="invoice__retailer__addnameaddress">
@@ -122,17 +151,17 @@
                 <textarea></textarea>
             </div>
             <div class="invoice__retailer__addnameaddress">
-                <button id="invoice__retailer__savebtns" class="invoice__retailer__savebtn" onClick="btn1"> save me</button>
+                <button id="invoice__retailer__savebtns" class="invoice__retailer__savebtn" onClick="btn1"> save me company information</button>
             </div>
+            <hr>
         </div>
-        <hr>
+      
         <div class="invoice__retailer__addsendmessages">
             <h3>send meassages As </h3>
             <p>Set up different email addresses to send your invoices and estimates.<a href="#">Learn more</a></p>
-            <button>Add Email</button>     
+            <button>+ Add Email</button>     
         </div>
     </div>
-    
 </body>
 
 </html>
