@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teammember</title>
+    <title>invoiceoverview</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -24,21 +24,23 @@
     }
 
     #teammember__containers {
-        background-color: white;
+        background-color: #f4f4f4;
+        background: white;
     }
 
-    .teammember__sections_plus {
+    .invoiceoverview__sections_plus {
         font-size: 15px;
         font-weight: bold;
         cursor: not-allowed;
         background: linear-gradient(#4daa21, #4daa21);
         color: white;
+
     }
 
     .teammember__sections__btn {
         border: transparent;
         text-align: center;
-        margin: 20px 120px;
+        margin: 27px 120px;
         width: 140px;
         height: 35px;
         border-radius: 6px 6px 6px 6px;
@@ -48,25 +50,25 @@
 
     }
 
-    .teammember__sections_trackcreateproject {
+    .invoiceoverview__sections_trackcreateproject {
         border: 1px solid grey;
         text-align: center;
         width: 160vh;
-        height: 105vh;
+        height: 75vh;
         margin: 10px 120px;
         color: #c1c1c1;
         font-size: 20px;
         line-height: 1.2;
         border-radius: 10px;
-        background-color: #f4f4f4;
+        background: #f4f4f4;
     }
 
-    .teammember__sections_trackcreateproject>img {
+    .invoiceoverview__sections_trackcreateproject>img {
         width: 410px;
         margin-top: 42px;
     }
 
-    .teammember__sections_trackcreateproject>div+button {
+    .invoiceoverview__sections_trackcreateproject>div+button {
         text-align: center;
         border: 2px solid wheat;
         text-align: center;
@@ -80,18 +82,19 @@
         cursor: pointer;
     }
 
-    .teammember__sections_trackcreateproject>p+button :hover {
+    .invoiceoverview__sections_trackcreateproject>p+button :hover {
+        /* background-color: green; */
         color: grey;
     }
 
-    .teammember__sections_trialupgrade {
+    .invoiceoverview__sections_trialupgrade {
         height: 120px;
         background-color: #f9f9f9;
         color: whitesmoke;
         font-size: 12px;
     }
 
-    .teammember__sections_trialleft {
+    .invoiceoverview__sections_trialleft {
         display: flex;
         flex: 1;
         padding: 32px 3px;
@@ -100,7 +103,7 @@
         border: 1px solid white;
     }
 
-    .teammember__sections_trialleft>button {
+    .invoiceoverview__sections_trialleft>button {
         text-align: center;
         border: 2px solid white;
         border-radius: 5px;
@@ -115,7 +118,7 @@
         background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4)
     }
 
-    .teammember__sections_trialleft>p {
+    .invoiceoverview__sections_trialleft>p {
         text-align: center;
         text-align: center;
         margin-top: 7px;
@@ -123,24 +126,24 @@
         font-size: 14px;
     }
 
-    .teammember__sections_trialleft>p>span {
+    .invoiceoverview__sections_trialleft>p>span {
         color: darkgrey;
     }
 
-    .teammember__sections_privacyterms {
+    .invoice__sections_privacyterms {
         margin-left: 83vh;
         padding: 2px;
         margin-top: -10px;
     }
 
-    .teammember__sections_privacyterms>.teammember__sections_privacylinks {
+    .invoice__sections_privacyterms>.invoiceoverview__sections_privacylinks {
         color: grey;
         text-decoration: none;
         padding-left: 11px;
         font-size: 15px;
     }
 
-    .teammember__sections_privacylinks:hover {
+    .invoiceoverview__sections_privacylinks:hover {
         color: lightgrey;
     }
 
@@ -154,8 +157,8 @@
         font-size: 33px;
     }
 
-    .teammember__sections_newexpense {
-        background-color: lightgrey;
+    .invoiceoverview__sections_newexpense {
+        background-color: #eeeeee;
     }
 
     .teammember__eachworkreview {
@@ -166,7 +169,7 @@
         margin:12px 210px;
     }
 
-    .teammember__eachworkreview > .teammember__eachworkreview__week{
+    .teammember__eachworkreview > .invoiceoverview__eachworkreview__week{
         display: flex;
         flex: 1;
         width: 590px;
@@ -177,7 +180,7 @@
         font-size: 16px;
         color: #333333;
     }
-    .teammember__eachworkreview__week > p + select {
+    .invoiceoverview__eachworkreview__week> p + select {
         border: 2px solid wheat;
         text-align: center;
         border-radius: 5px;
@@ -198,7 +201,7 @@
         font-size: 12px;
         padding: 12px;
     }
-    .teammemeber__optionsetting__btns > button {
+    .invoice__optionsetting__btns > button {
         color: white;
         font-size: 16px;
         width: 212px;
@@ -210,7 +213,7 @@
         margin:12px 8px;
         cursor: pointer;
     }
-    .teammemeber__optionsetting__btns > button + button{
+    .invoice__optionsetting__btns > button + button{
         color: white;
         font-size: 16px;
         font-weight: bold;
@@ -222,67 +225,78 @@
         background-color:grey;
     }
 
+    .invoiceoverview__details {
+        color: grey;
+        padding: 12px;
+        width: 100%;
+        height: 5vh;
+        background-color: #eeeeee;
+    }
+
+    .invoiceoverview__details__invoices {
+        display: flex;
+        flex: 1;
+        margin-left: 100px;
+    }
+
+    .invoiceoverview__details__invoices>a {
+        text-decoration: none;
+        color: grey;
+        padding: 12px;
+    }
+
+    .invoiceoverview__details__invoices>a:hover {
+        color: grey;
+        border-bottom: 2px solid orange;
+    }
+
+    .invoiceoverview__details__invoices>a>span {
+        color: black;
+    }
+
+    .invoiceoverview__details__invoices>a>span:hover {
+        color: orange;
+    }
+
+
+
+
 </style>
 
 <body>
     <div id="teammember__containers">
-        <div class="expenses__sections">
-            <div class="teammember__sections_newexpense">
+        <div class="invoiceoverview__sections">
+           
+            <div class="invoiceoverview__details">
+                <div class="invoiceoverview__details__invoices">
+                    <a href="#"><span><strong>T</strong>ime</span> </a>
+                    <a href="#"> Detailed Time </a>
+                    <a href="#"> Uninvoiced </a>
+                    <a href="#"> Expenses </a>
+                    <a href="#"> Contractor </a>
+                </div>
+            </div>
+            <div class="invoiceoverview__sections_newexpense">
                 <button type="button" class="teammember__sections__btn" id="teammember__sections__btns">
-                    <span class="teammember__sections_plus"> + Add Person</span></button>
+                    <span class="invoiceoverview__sections_plus"> + Add Person</span></button>
                 <div id="teammember__sections_hiddenform">
                 </div>
             </div>
-            <div class="teammember__sections_trackcreateproject">
-                <img src="./teamimg/team-wizard-illustration@2x-12cf25cde77656446364c5503bcd780fb85994f4c1a643bcd048a8cd456876e2.png"
-                    alt="expenses__sections_img">
+            <!-- <hr style="border:1px solid grey;> -->
+            <div class="invoiceoverview__sections_trackcreateproject">
+                <img src="./landing-invoices@2x-33f715e3bf84684559acc5c947006e22e3576487e9821a7673e54d8a7a396503.png"
+                    alt="invoiceoverview__sections_img">
                 <p> Welcome to Team! Here you can review and edit time, and see how you’re doing<br>
-                    against capacity. That’s the number of hours per week you typically work.!
-                    <br><br>
-                <p>If you’re not working with a large team and this information<br>
-                    isn’t useful for you, feel free to turn this section off.
-                </p>
-
-
-                <div class="teammember__eachworkreview">
-                    <div class="teammember__eachworkreview__week">
-                        <p>How many hours do you usually work each week? </p>
-                        <select>
-                            <option> week </option>
-                            <option> 1 </option>
-                            <option> 2 </option>
-                            <option> 3 </option>
-                        </select>
-                    </div>
-                    <div class="teammember__eachworkreview__week">
-                        <p>When is your timesheet due each week?</p>
-                        <select>
-                            <option> No Preference </option>
-                            <option> Monday </option>
-                            <option> Tuesday </option>
-                            <option> Sunday </option>
-                        </select>
-                    </div>
-                </div>
-                <div class="teammember__optionsetting">
-                    <p> You can always change these options from Settings. </p>
-                    <div class="teammemeber__optionsetting__btns"> 
-                        <button> All set show me team </button>
-                        <button> No thanks let me, turn off</button>
-                    </div>
-
-                    </p>
-                </p>
-                </div>
+                    against capacity. That’s the number of hours<br> per week you typically work.!</p>
             </div>
-            <div class="teammember__sections_trialupgrade">
-                <div class="teammember__sections_trialleft">
+            <div class="invoiceoverview__sections_trialupgrade">
+                <div class="invoiceoverview__sections_trialleft">
                     <p> <span> 29 days </span> left in your free trial </p>
                     <button>upgrade</button>
-                    <div class="teammember__sections_privacyterms">
-                        <a class="teammember__sections_privacylinks" href="#">Privacy</a>
-                        <a class="teammember__sections_privacylinks" href="#">Terms</a>
-                        <a class="teammember__sections_privacylinks" id="teammember_harvesting" href="#">Harvest</a>
+                    <div class="invoice__sections_privacyterms">
+                        <a class="invoiceoverview__sections_privacylinks" href="#">Privacy</a>
+                        <a class="invoiceoverview__sections_privacylinks" href="#">Terms</a>
+                        <a class="invoiceoverview__sections_privacylinks" id="teammember_harvesting" href="#">Harvest</a>
                     </div>
                 </div>
             </div>

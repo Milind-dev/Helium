@@ -9,7 +9,8 @@
 }
 
 #reports__containers {
-    background-color: #f4f4f4;
+    background-color:white;
+    
 }
 
 
@@ -20,9 +21,12 @@
     height: 84vh;
     margin: 10px 120px;
     color: #c1c1c1;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2em;
     border-radius: 10px;
+    background: #f4f4f4;
+
+
 }
 
 .reports__sections_trackcreateproject>img {
@@ -130,12 +134,15 @@
     display: flex;
     flex: 1;
     margin-left: 100px;
+    
 }
 
 .reports__details__invoices>a {
     text-decoration: none;
     color: grey;
     padding: 12px;
+    font-size: 14px;
+    
 }
 .reports__details__invoices>a:hover {
     color: grey;

@@ -9,7 +9,7 @@
 }
 
 #expenses__containers {
-    background-color: #f4f4f4;
+    background-color:white
 }
 
 .expenses__sections_plus {
@@ -39,6 +39,7 @@
     font-size: 20px;
     line-height: 1.2;
     border-radius: 10px;
+    background:#f4f4f4
 }
 
 .expenses__sections_trackcreateproject>img {
