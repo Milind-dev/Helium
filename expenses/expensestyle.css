@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     box-sizing: border-box;
 }
 
@@ -138,7 +138,7 @@
 }
 
 #expenses__containers {
-    background-color:white;
+    background-color: white;
     margin: 4% 0 0 0;
 }
 
@@ -169,7 +169,7 @@
     font-size: 20px;
     line-height: 1.2;
     border-radius: 10px;
-    background:#f4f4f4
+    background: #f4f4f4
 }
 
 .expenses__sections_trackcreateproject>img {
@@ -203,17 +203,19 @@
     font-size: 12px;
     border: 1px solid white;
 }
-.hidden__cards:before{
-  content: "";
-  position: absolute;
-  right: 50px;
-  top: -16px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 26px solid lemonchiffon;
-  border-bottom: 13px solid transparent;
+
+.hidden__cards:before {
+    content: "";
+    position: absolute;
+    right: 50px;
+    top: -16px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 26px solid lemonchiffon;
+    border-bottom: 13px solid transparent;
 }
+
 .expenses__sections_trialleft {
     display: flex;
     flex: 1;
@@ -277,7 +279,7 @@
     font-size: 33px;
 }
 
-.hidden__cards{
+.hidden__cards {
     position: absolute;
     left: 100px;
     width: 150px;
@@ -290,4 +292,19 @@
     border-radius: 10px;
     font-size: 18px;
     height: 120px;
+}
+
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
 }

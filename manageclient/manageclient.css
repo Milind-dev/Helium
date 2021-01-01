@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     box-sizing: border-box;
 }
 
@@ -153,7 +153,8 @@
     line-height: 1.2em;
     border-radius: 10px;
 }
-.manageclient__sections_trackcreateproject > p {
+
+.manageclient__sections_trackcreateproject>p {
     margin-top: 24vh;
 }
 
@@ -236,7 +237,7 @@
     background-color: #eeeeee;
 }
 
-.manageclient__details > span {
+.manageclient__details>span {
     margin-left: 3%;
 }
 
@@ -253,7 +254,7 @@
     font-size: 14px;
 }
 
-.manageclient__details__invoices > a > span {
+.manageclient__details__invoices>a>span {
     margin-left: 110px;
 }
 
@@ -270,15 +271,16 @@
     color: orange;
 }
 
-.manageclient__btn{
+.manageclient__btn {
     margin: 40px 198px
 }
 
-.manageclient__btn>h1{
+.manageclient__btn>h1 {
     color: #333333;
     font-size: 26px;
     margin-left: 210px;
 }
+
 .manageclient__btn>h1+button {
     text-align: center;
     border: 2px solid wheat;
@@ -293,7 +295,7 @@
     cursor: pointer;
 }
 
-.manageclient__btn>h1+button +select{
+.manageclient__btn>h1+button+select {
     text-align: center;
     border: 2px solid whitesmoke;
     text-align: center;
@@ -307,11 +309,29 @@
     color: grey;
     cursor: pointer;
 }
-.manageclient__impexports{
+
+.manageclient__impexports {
     border: 3px solid whitesmoke;
     box-shadow: 5px;
 }
+
 .manageclient__btn>h1+button :hover {
     color: grey;
 }
 
+
+
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
+}

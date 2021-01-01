@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     box-sizing: border-box;
 }
 
@@ -279,10 +279,10 @@
     /* height: 130px; */
     /* border: 1px solid red; */
     background-color: #fffbde;
-    margin:12px 210px;
+    margin: 12px 210px;
 }
 
-.teammember__eachworkreview > .teammember__eachworkreview__week{
+.teammember__eachworkreview>.teammember__eachworkreview__week {
     display: flex;
     flex: 1;
     width: 590px;
@@ -293,7 +293,8 @@
     font-size: 16px;
     color: #333333;
 }
-.teammember__eachworkreview__week > p + select {
+
+.teammember__eachworkreview__week>p+select {
     border: 2px solid wheat;
     text-align: center;
     border-radius: 5px;
@@ -302,19 +303,21 @@
     font-size: 14px;
     font-weight: inherit;
     cursor: pointer;
-    
+
 }
-.teammember__optionsetting{
+
+.teammember__optionsetting {
     padding: 12px;
     margin: 2px 12px;
 }
 
-.teammember__optionsetting > p {
+.teammember__optionsetting>p {
     color: #888888;
     font-size: 12px;
     padding: 12px;
 }
-.teammemeber__optionsetting__btns > button {
+
+.teammemeber__optionsetting__btns>button {
     color: white;
     font-size: 16px;
     width: 212px;
@@ -323,10 +326,11 @@
     border-radius: 5px;
     border: 1px solid white;
     background-color: #4daa21;
-    margin:12px 8px;
+    margin: 12px 8px;
     cursor: pointer;
 }
-.teammemeber__optionsetting__btns > button + button{
+
+.teammemeber__optionsetting__btns>button+button {
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -336,5 +340,24 @@
     /* padding-bo: 12px; */
     border-radius: 5px;
     border: 1px solid white;
-    background-color:grey;
+    background-color: grey;
+}
+
+
+
+
+
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
 }

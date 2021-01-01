@@ -202,7 +202,7 @@ body {
 }
 
 .middle__box>strong {
-    font-size: 25px;
+    font-size: 20px;
     border: 1px;
     width: 17%;
 }
@@ -596,4 +596,21 @@ footer div:nth-child(2) a {
     cursor: pointer;
     font-size: 15px;
     padding: 6px;
+}
+
+
+
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
 }

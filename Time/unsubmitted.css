@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     box-sizing: border-box;
 }
 
@@ -146,12 +146,12 @@
 }
 
 .time__button {
-    border: 1px ;
+    border: 1px;
     margin-left: 16%;
 }
 
-.time__button > button {
-    border: 1px ;
+.time__button>button {
+    border: 1px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -162,7 +162,7 @@
     cursor: pointer;
 }
 
-.time__button > button > a {
+.time__button>button>a {
     color: grey;
     text-decoration: none;
 }
@@ -283,4 +283,21 @@ footer div:nth-child(2) a {
     text-decoration: none;
     margin-left: 15px;
     transition: all 0.1s ease;
+}
+
+
+
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
 }

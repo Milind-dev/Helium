@@ -32,12 +32,12 @@ function Thursday() {
 }
 
 function Friday() {
-    document.getElementById("change__monday").innerHTML = "Today: Friday, 1 Jan"
+    document.getElementById("change__monday").innerHTML = "Friday, 1 Jan"
     document.getElementById("hide__text").innerHTML = "none"
 }
 
 function Saturday() {
-    document.getElementById("change__monday").innerHTML = "Saturday, 2 Jan"
+    document.getElementById("change__monday").innerHTML = "Today: Saturday, 2 Jan"
     document.getElementById("hide__text").innerHTML = "none"
 }
 
