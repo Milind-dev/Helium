@@ -1,16 +1,146 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins',
+    sans-serif;
     box-sizing: border-box;
 }
 
-​body {
-    font-family: 'Poppins', sans-serif;
+.nav__bar {
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    min-height: 7vh;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F47B1A;
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+.nav__bar__links {
+    flex: 2 1 50%;
+}
+
+.nav__bar__links ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav__bar__links ul li {
+    /* margin: 5px 0; */
+    padding: 15px 5px;
+    transition: all 0.1s ease;
+}
+
+.nav__bar__links ul li a,
+.nav__bar__actions a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.nav__bar__links__hero {
+    background-color: #ffffff4b;
+}
+
+.nav__bar__actions {
+    flex: 1 1 15%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.nav__bar__actions>a {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.nav__bar__actions__dropdown__button {
+    position: relative;
+}
+
+.nav__bar__actions__dropdown__button button {
+    width: 120px;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav__bar__actions__dropdown__button button img {
+    width: 31px;
+    height: 31px;
+}
+
+.nav__bar__actions__dropdown__button__list {
+    position: absolute;
+    top: 7.5vh;
+    right: 10%;
+    background-color: white;
+    color: black;
+    /* padding: 15px; */
+    width: 160px;
+    font-size: 15px;
+    display: none;
+    border: 1px solid #444;
+    box-shadow: 0 0 3px gray;
+}
+
+.nav__bar__actions__dropdown__button__list a {
+    display: block;
+    color: #444;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.nav__bar__actions__dropdown__button__list__show {
+    display: block;
+}
+
+.nav__bar__actions__dropdown__button__list hr {
+    border: 1px solid #999;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid rgb(161, 159, 159);
+    padding: 10px 15px;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name p {
+    color: #444;
+}
+
+.nav__bar__actions__dropdown__button__list::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    font-size: 45px;
+    color: #F4F4F4;
+    /* box-shadow: 0 0 3px #444; */
+    color: #F4F4F4;
+    position: absolute;
+    top: -8%;
+    right: 10%;
 }
 
 #teammember__containers {
     background-color: #f4f4f4;
     background: white;
+    margin-top: 3%;
 }
 
 .invoiceoverview__sections_plus {
@@ -19,13 +149,12 @@
     cursor: not-allowed;
     background: linear-gradient(#4daa21, #4daa21);
     color: white;
-
 }
 
 .teammember__sections__btn {
     border: transparent;
     text-align: center;
-    margin: 27px 120px;
+    margin: 27px 230px;
     width: 140px;
     height: 35px;
     border-radius: 6px 6px 6px 6px;
@@ -38,9 +167,9 @@
 .invoiceoverview__sections_trackcreateproject {
     border: 1px solid grey;
     text-align: center;
-    width: 160vh;
-    height: 75vh;
-    margin: 10px 120px;
+    width: 135vh;
+    height: 65vh;
+    margin: 10px 230px;
     color: #c1c1c1;
     font-size: 20px;
     line-height: 1.2;
@@ -146,6 +275,10 @@
     background-color: #eeeeee;
 }
 
+/* .invoiceoverview__sections_newexpense > span {
+    margin-left: 15%;
+} */
+
 .invoiceoverview__eachworkreview__week {
     width: 590px;
     /* height: 130px; */
@@ -212,7 +345,7 @@
 .invoiceoverview__details__invoices {
     display: flex;
     flex: 1;
-    margin-left: 100px;
+    margin-left: 220px;
 }
 
 .invoiceoverview__details__invoices>a {

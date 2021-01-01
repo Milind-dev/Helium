@@ -6,15 +6,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expenses</title>
+    <link rel="icon" type="image/png"
+        href="https://www.getharvest.com/assets/apple-touch-icon-3b0196d037cb2439496a001bac80a4647cb1f35cfa37b52d4c754adc2c041532.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./ExpenseStyle/expensestyle.css" />
+    <link rel="stylesheet" href="./expensestyle.css" />
 </head>
 
 
 <body>
+    <header>
+        <nav class="nav__bar">
+            <div class="nav__bar__links">
+                <ul>
+                    <li ><a href="../Time/timesheet2.html">Time</a></li>
+                    <li class="nav__bar__links__hero"><a href="#">Expenses</a></li>
+                    <li ><a href="../projects/projects.html">Projects</a></li>
+                    <li><a href="../teammember/teammember.html">Team</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="../invoiceOverview/invoiceoverview.html">Invoices</a></li>
+                    <li><a href="../manageclient/manageClient.html">Manage</a></li>
+                </ul>
+            </div>
+            <div class="nav__bar__actions">
+                <a href="#">Help</a>
+                <a href="#">Settings</a>
+                <div class="nav__bar__actions__dropdown__button" id="nav__bar__actions__dropdown__button">
+                    <button>
+                        <img src="https://proxy.harvestfiles.com/production_harvestapp_public/uploads/users/avatar/003/561/355/092fef1ec994a51c9828b147545480b8f69f12d0/normal.?1609215247" alt="
+                            avatar">
+                        <span>Naeem</span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="nav__bar__actions__dropdown__button__list"
+                        id="nav__bar__actions__dropdown__button__list">
+                        <div class="nav__bar__actions__dropdown__button__list__user__name">
+                            <h3>Naeem Shaik</h3>
+                            <p>Naeem</p>
+                        </div>
+                        <a href="#">My Profile</a>
+                        <a href="#">My Time Report</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Referrals</a>
+                        <hr />
+                        <a href="#">Apps</a>
+                        <a href="#">Integrations</a>
+                        <hr />
+                        <a href="../index.html">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div id="expenses__containers">
         <div class="expenses__sections">
             <div class="expenses__sections_newexpense">
@@ -24,15 +70,15 @@
                 </div>
             </div>
             <div class="expenses__sections_trackcreateproject">
-                <img src="./expenseimg/expenseimage1.png" alt="expenses__sections_img">
+                <img src="./expenseimage1.png" alt="expenses__sections_img">
                 <p> Here’s where you’ll track your expenses!<br>
                     To start, just add yourself to a project or create a new one. </p>
-                <button> create a project </button>
+                <button> Create a Project </button>
             </div>
             <div class="expenses__sections_trialupgrade">
                 <div class="expenses__sections_trialleft">
-                    <p> <span> 29 days </span> left in your free trial </p>
-                    <button>upgrade</button>
+                    <p> <span> 26 days </span> left in your free trial </p>
+                    <button>Upgrade</button>
                     <div class="expenses__sections_privacyterms">
                         <a class="expenses__sections_privacylinks" href="#">Privacy</a>
                         <a class="expenses__sections_privacylinks" href="#">Terms</a>
@@ -41,6 +87,6 @@
                 </div>
             </div>
 
-    <script src="./ExpenseScript.js/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
