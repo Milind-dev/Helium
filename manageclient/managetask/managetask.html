@@ -24,22 +24,28 @@
     }
 
     #manageclient__containers {
-        background-color: #f4f4f4;
+        background-color: white;
     }
-
-
-
 
     .managetask__sections_trackcreateproject {
         padding: 12px;
         border: 1px solid grey;
+        border-left: transparent;
+        border-right: transparent;
         width: 90vh;
-        height: 55vh;
+        height: 53vh;
         margin: 10px 170px;
         color: #c1c1c1;
         font-size: 20px;
         line-height: 1.2em;
-        border-radius: 10px;
+        /* border-radius: 10px; */
+        padding: 10px 2px 190px;
+    }
+    .managetask__sections_trackcreateproject1{
+          height: auto;
+        /* border-radius: 10px; */
+        width: 520px;
+        background: #f4f4f4;
     }
 
     .managetask_commontasks {
@@ -70,6 +76,7 @@
         color: #918a88;
         font-size: 15px;
         padding: 2px 18px;
+        width: 120px;
     }
 
     .managetasks_projectstimearchive {
@@ -247,7 +254,11 @@
     .managetask__btn>h1+button :hover {
         color: grey;
     }
-
+    .managetask__billable{
+        box-sizing: 12px;
+        box-shadow: 6px solid white;
+        width: 12px;
+    }
    
 </style>
 
@@ -278,7 +289,7 @@
 
 
 
-            <div class="managetask__sections_trackcreateproject">
+            <div class="managetask__sections_trackcreateproject managetask__sections_trackcreateproject1  ">
                 <div class="managetask_commontasks">
 
                     <div class="managetask_commontask">
@@ -289,6 +300,58 @@
                     <div class="managetask_defaulthr">
                         <p>Task</p>
                         <p> Default Hourly Rate</p>
+                    </div>
+                    <hr>
+
+                    <div class="managetasks__projects">
+                        <!-- form -->
+
+                        <div id="managetask_indiv"> </div>
+                        <form id="managetask__form">
+                            <div class="managetasks_projectstime">
+                                <div>
+                                    <button id="managetask__projectedition" class="managetask__editions">Edit</p>
+                                </div>
+                                <div>
+                                    <p class="managetask__editions managetask__editions_p">Design</p>
+                                </div>
+                                <div>
+                                    <button class="managetask__editions" disabled>Billable</button>
+                                </div>
+
+
+                                <div class="managetasks_projectstime">
+                                    <!-- <p>fs<p> -->
+                                    <div class="managetasks_projectstimearchive">
+                                        <p id="managetask__rupees" class="managetask__editions managetask__editions_p">
+                                            Rs </p>
+                                    </div>
+                                    <div>
+                                        <button id="managetask__archive" class="managetask__editions">Archive</button>
+                                        <div id="managetask__archive_description">
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button id="managetask__delete" class="managetask__editions">Delete</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+<!-- other works -->
+            <div class="managetask__sections_trackcreateproject managetask__sections_trackcreateproject1">
+                <div class="managetask_commontasks">
+
+                    <div class="managetask_commontask">
+                        <p>other Tasks</p>
+                        <p>These tasks must be manually added to projects.</p>
+                        <hr>
                     </div>
                     <hr>
 
@@ -378,7 +441,6 @@
                     managetask_archive_cancel.style.width= "180px";
                     managetask_archive_cancel.style.height= "40px";
                     managetask_archive_cancel.style.backgroundColor = "lightgrey";
-                    
                     managetask_archive_cancel.style.boxShadow= "6px solid red";
                     managetask_archive_cancel.style.borderRadius = "7px";
                     
@@ -417,7 +479,9 @@
                     managetask_indivform__form.style.border = "1px solid red";
                     managetask_indivform__form.style.position = "absolute";  //here change
                     managetask_indivform__form.style.top = "370px";  //here change
-
+                    managetask_indivform__form.style.borderRadius = "5px";  //here change
+                    managetask_indivform__form.style.paddingLeft= "15px";  //here change
+                    
 
                     var managetask_indivform__p = document.createElement("p");
                     managetask_indivform__p.textContent = "Text Name";
@@ -434,15 +498,20 @@
                     managetask_indivform1_ruppes.textContent = "Rs"
                     managetask_indivform1_ruppes.style.display = "inline-block"
                     managetask_indivform1_ruppes.style.fontSize = "12px"
+                    managetask_indivform1_ruppes.style.padding = "12px"
 
                     var managetask_indivform1_input = document.createElement("input")
                     managetask_indivform1_input.value = "0.00";
+                    managetask_indivform1_input.style.width = "65px"
+                    managetask_indivform1_input.style.height= "35px"
+                    managetask_indivform1_input.style.marginTop= "11px"
                     managetask_indivform1_input.setAttribute("id", "managetask__moneyP");
 
                     var managetask_indivform1_perrupee = document.createElement("p")
-                    managetask_indivform1_perrupee.textContent = "perhr"
+                    managetask_indivform1_perrupee.textContent = "per hour"
+                    managetask_indivform1_perrupee.fontWeight = "normal"
                     managetask_indivform1_perrupee.style.fontSize = "12px";
-                    managetask_indivform1_perrupee.style.margin = "6px 12px";
+                    managetask_indivform1_perrupee.style.margin = "12px 12px";
 
 
 
@@ -460,29 +529,53 @@
 
                     var managetask_indivform1_checkboxes = document.createElement("INPUT")
                     managetask_indivform1_checkboxes.setAttribute("type", "checkbox");
-                    managetask_indivform1_checkboxes.style.margin = "15px 15px";
+                    managetask_indivform1_checkboxes.style.margin = "15px 5px";
                     var managetask_indivform1_checkboxtext = document.createElement("p")
-                    managetask_indivform1_checkboxtext.textContent = "this is common task and should be added"
-                    managetask_indivform1_checkboxtext.style.margin = "15px 20px";
+                    managetask_indivform1_checkboxtext.textContent = "This task is billable by default"
+                    managetask_indivform1_checkboxtext.style.margin = "10px 10px";
 
                     var managetask_indivform1_checkboxes2 = document.createElement("INPUT")
                     managetask_indivform1_checkboxes2.setAttribute("type", "checkbox");
-                    managetask_indivform1_checkboxes2.style.margin = "15px 15px";
+                    managetask_indivform1_checkboxes2.style.margin = "4px 4px";
                     managetask_indivform1_checkboxes2.style.a = "#";
                     managetask_indivform1_checkboxes2.setAttribute("class", "manageTaskupdating");
                     managetask_indivform1_checkboxes2.setAttribute("id", "managetask_updating_pmoney")
                     var managetask_indivform1_checkboxtext2 = document.createElement("p")
-                    managetask_indivform1_checkboxtext2.textContent = "this is common task and should be added"
-                    managetask_indivform1_checkboxtext2.style.margin = "15px 20px";
+                    managetask_indivform1_checkboxtext2.textContent = "This is a common task, and should be added "
+                    managetask_indivform1_checkboxtext2.style.margin = "4px 11px";
 
                     var managetask_indivform_update = document.createElement("button")
                     managetask_indivform_update.textContent = "update"
+                    managetask_indivform_update.style.color= "white";
+                    managetask_indivform_update.style.backgroundColor= "#50b030";
+                    managetask_indivform_update.style.padding= "12px 10px";
+                    managetask_indivform_update.style.borderRadius= "5px";
+                    managetask_indivform_update.style.cursor= "pointer";
+                    managetask_indivform_update.style.boxShadow = "5px"
+                    managetask_indivform_update.style.border= "white"
+                    
+
+                    
+                    
+                    
 
                     managetask_indivform_update.setAttribute("id", "manageTaskupdating")
 
                     var managetask_indivform_cancel = document.createElement("button")
                     managetask_indivform_cancel.textContent = "cancel";
                     managetask_indivform_cancel.setAttribute("id", "managetask_indivform_cancel");
+
+
+                    managetask_indivform_cancel.textContent = "cancel"
+                    managetask_indivform_cancel.style.color= "white";
+                    managetask_indivform_cancel.style.backgroundColor= "#50b030";
+                    managetask_indivform_cancel.style.padding= "12px 10px";
+                    managetask_indivform_cancel.style.borderRadius= "5px";
+                    managetask_indivform_cancel.style.cursor= "pointer";
+                    managetask_indivform_cancel.style.boxShadow = "5px"
+                    managetask_indivform_cancel.style.border= "white";
+                    managetask_indivform_cancel.style.marginLeft= "12px";
+                    
 
 
 
