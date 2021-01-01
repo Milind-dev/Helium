@@ -53,11 +53,12 @@
 
 .teammember__sections_trackcreateproject>div+button {
     text-align: center;
-    border: 2px solid wheat;
+    border: 2px solid white;
     text-align: center;
     margin: 20px 120px;
     width: 140px;
     height: 40px;
+    box-sizing: content-box;
     border-radius: 10px;
     color: whitesmoke;
     background: linear-gradient(#4fb840, #14a000);
@@ -200,6 +201,7 @@
     font-size: 16px;
     font-weight: bold;
     width: 212px;
+    box-sizing: content-box;
     height: 42px;
     /* padding-bo: 12px; */
     border-radius: 5px;
