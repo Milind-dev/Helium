@@ -159,7 +159,7 @@
     }
 
     .teammember__eachworkreview {
-        width: 490px;
+        width: 590px;
         /* height: 130px; */
         /* border: 1px solid red; */
         background-color: #fffbde;
@@ -175,18 +175,53 @@
         justify-content: space-between;
         padding: 12px;
         font-size: 16px;
+        color: #333333;
     }
     .teammember__eachworkreview__week > p + select {
         border: 2px solid wheat;
         text-align: center;
         border-radius: 5px;
-        color: #333;
+        color: #333333;
         background: linear-gradient(white, white);
         font-size: 14px;
         font-weight: inherit;
         cursor: pointer;
         
     }
+    .teammember__optionsetting{
+        padding: 12px;
+        margin: 2px 12px;
+    }
+
+    .teammember__optionsetting > p {
+        color: #888888;
+        font-size: 12px;
+        padding: 12px;
+    }
+    .teammemeber__optionsetting__btns > button {
+        color: white;
+        font-size: 16px;
+        width: 212px;
+        height: 42px;
+        padding-bottom: 2px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: #4daa21;
+        margin:12px 8px;
+        cursor: pointer;
+    }
+    .teammemeber__optionsetting__btns > button + button{
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        width: 212px;
+        height: 42px;
+        /* padding-bo: 12px; */
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color:grey;
+    }
+
 </style>
 
 <body>
@@ -213,10 +248,10 @@
                     <div class="teammember__eachworkreview__week">
                         <p>How many hours do you usually work each week? </p>
                         <select>
-                            <option> No Preference </option>
-                            <option> Monday </option>
-                            <option> Tuesday </option>
-                            <option> Sunday </option>
+                            <option> week </option>
+                            <option> 1 </option>
+                            <option> 2 </option>
+                            <option> 3 </option>
                         </select>
                     </div>
                     <div class="teammember__eachworkreview__week">
@@ -228,9 +263,17 @@
                             <option> Sunday </option>
                         </select>
                     </div>
-                    
                 </div>
-                <button> create a project </button>
+                <div class="teammember__optionsetting">
+                    <p> You can always change these options from Settings. </p>
+                    <div class="teammemeber__optionsetting__btns"> 
+                        <button> All set show me team </button>
+                        <button> No thanks let me, turn off</button>
+                    </div>
+
+                    </p>
+                </p>
+                </div>
             </div>
             <div class="teammember__sections_trialupgrade">
                 <div class="teammember__sections_trialleft">
