@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invoice Retainer</title>
+</head>
+<style>
+    .invoice__retailer__sidelinks{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        padding-top: 7px;
+        background-color: grey;
+        width: 250px;
+        height: auto;
+    }
+    .invoice__retailer__sidelinks > a{
+        text-decoration: none;
+        color:white;
+        padding:12px;
+        margin: center;
+    }
+    .invoice__retailer__sidelinks > a:hover{
+        color: white;
+        transition: 1.0s;
+        font-size: 22px;
+        border-bottom:2px solid orange;
+
+    }
+
+    .invoice__retailer__companyinfo{
+        color: grey;
+        font-size: 14px;
+    }
+    .invoice__retailer__addnameaddress{
+        display: flex;
+        flex: 1;
+        padding: 12px;
+        color:#666
+    }
+
+    .invoice__retailer__addnameaddress > input{
+        width: 202px;
+        height: 18px;
+        margin:  14px 22vh;
+    }
+
+    .invoice__retailer__addnameaddress > p + textarea{
+        width: 202px;
+        height: 88px;
+        margin:  14px 125px;
+        padding: 12px;
+    }
+    .invoice__retailer__addnameaddress  > button{
+        margin:12px 160px;
+        background-color: lightgreen;
+        border-radius: 5px;
+        box-shadow: 2px;
+        border: white;
+        width: 250px;
+        height: 40px;
+        color: white;
+    }
+    .invoice__retailer__addsendmessages{
+        color: #666;
+    }
+    .invoice__retailer__addsendmessages{
+        /* background : -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); */
+    background: linear-gradient(#fff, #eee);
+    color: #877060;
+    }
+
+
+    .invoice__retailer__companystatuslist{
+        position: absolute;
+        top: 13px;
+        left: 320px;
+}
+
+
+</style>
+
+<body>
+    <div class="invoice__retailer__container">
+         <div class="invoice__retailer__sidelinks">
+                <a href="../invoiceretainer/invoiceretainer1.html">Company
+                    Information</a>
+                <a href="../invoiceretainer/invoiceretailerDetails.html">Default Values</a>
+                <a href="/invoices/appearance">Appearance</a>
+                <a href="/invoices/messages">Messages</a>
+                <a href="/invoices/translations">Translations</a>
+                <a href="/">Item
+                    Types</a>
+                <a  href="/invoices/online_payment">Online Payment</a>
+            </div>
+        </div>
+        <div class="invoice__retailer__companystatuslist">
+
+        
+        <div class="invoice__retailer__companyconfig">
+            <div class="invoice__retailer__companyinfo">
+                <h1> Company Information</h1>
+                <p>Information about your company, which automatically shows up on your next invoice.</p>
+            </div>
+        </div>
+        <hr style="width: 530px;margin-left:20px;">
+
+        <div class="invoice__retailer__addinvoices">
+            <div class="invoice__retailer__addnameaddress">
+                <p> Name </p>
+                <input type="text" />
+            </div>
+            <div class="invoice__retailer__addnameaddress">
+                <p> Address </p>
+                <textarea></textarea>
+            </div>
+            <div class="invoice__retailer__addnameaddress">
+                <button id="invoice__retailer__savebtns" class="invoice__retailer__savebtn" onClick="btn1"> save me</button>
+            </div>
+        </div>
+        <hr>
+        <div class="invoice__retailer__addsendmessages">
+            <h3>send meassages As </h3>
+            <p>Set up different email addresses to send your invoices and estimates. Learn more</p>
+            <button>Add Email</button>     
+        </div>
+    </div>
+    
+</body>
+
+</html>

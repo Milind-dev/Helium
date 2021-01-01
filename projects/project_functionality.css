@@ -278,10 +278,6 @@ body {
 
 }
 
-.graph__analysis__allTime__details__list {
-    /* padding: 10px; */
-}
-
 .graph__analysis__allTime__details__list .graph__analysis__allTime__details__list__item {
     display: flex;
     justify-content: space-between;

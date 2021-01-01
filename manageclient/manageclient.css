@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',
+    sans-serif;
+    box-sizing: border-box;
+}
+
+.nav__bar {
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    min-height: 7vh;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F47B1A;
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+.nav__bar__links {
+    flex: 2 1 50%;
+}
+
+.nav__bar__links ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav__bar__links ul li {
+    /* margin: 5px 0; */
+    padding: 15px 5px;
+    transition: all 0.1s ease;
+}
+
+.nav__bar__links ul li a,
+.nav__bar__actions a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.nav__bar__links__hero {
+    background-color: #ffffff4b;
+}
+
+.nav__bar__actions {
+    flex: 1 1 15%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.nav__bar__actions>a {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.nav__bar__actions__dropdown__button {
+    position: relative;
+}
+
+.nav__bar__actions__dropdown__button button {
+    width: 120px;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav__bar__actions__dropdown__button button img {
+    width: 31px;
+    height: 31px;
+}
+
+.nav__bar__actions__dropdown__button__list {
+    position: absolute;
+    top: 7.5vh;
+    right: 10%;
+    background-color: white;
+    color: black;
+    /* padding: 15px; */
+    width: 160px;
+    font-size: 15px;
+    display: none;
+    border: 1px solid #444;
+    box-shadow: 0 0 3px gray;
+}
+
+.nav__bar__actions__dropdown__button__list a {
+    display: block;
+    color: #444;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.nav__bar__actions__dropdown__button__list__show {
+    display: block;
+}
+
+.nav__bar__actions__dropdown__button__list hr {
+    border: 1px solid #999;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid rgb(161, 159, 159);
+    padding: 10px 15px;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name p {
+    color: #444;
+}
+
+.nav__bar__actions__dropdown__button__list::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    font-size: 45px;
+    color: #F4F4F4;
+    /* box-shadow: 0 0 3px #444; */
+    color: #F4F4F4;
+    position: absolute;
+    top: -8%;
+    right: 10%;
+}
+
+#manageclient__containers {
+    background-color: #f4f4f4;
+}
+
+
+.manageclient__sections_trackcreateproject {
+    border: 1px solid grey;
+    text-align: center;
+    width: 100vh;
+    height: 55vh;
+    margin: 10px 400px;
+    color: #c1c1c1;
+    font-size: 20px;
+    line-height: 1.2em;
+    border-radius: 10px;
+}
+.manageclient__sections_trackcreateproject > p {
+    margin-top: 24vh;
+}
+
+.manageclient__sections_trialupgrade {
+    height: 60px;
+    background-color: #f9f9f9;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+.manageclient__sections_trialleft {
+    display: flex;
+    flex: 1;
+    padding: 32px 3px;
+    margin: 120px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.manageclient__sections_trialleft>button {
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 12px;
+    cursor: all-scroll;
+    background: linear, left top, left bottom, from(#f4f4f4), to(#e4e4e4);
+}
+
+.manageclient__sections_trialleft>p {
+    text-align: center;
+    text-align: center;
+    margin-top: 7px;
+    color: grey;
+    font-size: 14px;
+}
+
+.manageclient__sections_trialleft>p>span {
+    color: darkgrey;
+}
+
+.manageclient__sections_privacyterms {
+    margin-left: 53vh;
+    padding: 2px;
+    margin-top: -10px;
+}
+
+.manageclient__sections_privacyterms>.manageclient__sections_privacylinks {
+    color: grey;
+    text-decoration: none;
+    padding-left: 11px;
+    font-size: 15px;
+}
+
+.manageclient__sections_privacylinks:hover {
+    color: lightgrey;
+}
+
+#manageclient_harvesting {
+    color: lightgrey;
+    font-size: 33px;
+}
+
+#manageclient_harvesting:hover {
+    color: grey;
+    font-size: 33px;
+}
+
+.manageclient__details {
+    color: grey;
+    padding: 12px;
+    margin-top: 3.7%;
+    width: 100%;
+    height: 5vh;
+    background-color: #eeeeee;
+}
+
+.manageclient__details > span {
+    margin-left: 3%;
+}
+
+.manageclient__details__invoices {
+    display: flex;
+    flex: 1;
+    margin-left: 100px;
+}
+
+.manageclient__details__invoices>a {
+    text-decoration: none;
+    color: grey;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.manageclient__details__invoices > a > span {
+    margin-left: 110px;
+}
+
+.manageclient__details__invoices>a:hover {
+    color: grey;
+    border-bottom: 2px solid orange;
+}
+
+.manageclient__details__invoices>a>span {
+    color: black;
+}
+
+.manageclient__details__invoices>a>span:hover {
+    color: orange;
+}
+
+.manageclient__btn{
+    margin: 40px 198px
+}
+
+.manageclient__btn>h1{
+    color: #333333;
+    font-size: 26px;
+    margin-left: 210px;
+}
+.manageclient__btn>h1+button {
+    text-align: center;
+    border: 2px solid wheat;
+    text-align: center;
+    margin: 10px 210px;
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    color: whitesmoke;
+    background: linear-gradient(#4fb840, #14a000);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.manageclient__btn>h1+button +select{
+    text-align: center;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    margin: 10px 10px;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    cursor: pointer;
+}
+.manageclient__impexports{
+    border: 3px solid whitesmoke;
+    box-shadow: 5px;
+}
+.manageclient__btn>h1+button :hover {
+    color: grey;
+}
+
