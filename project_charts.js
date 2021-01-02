@@ -47,7 +47,7 @@ let mixedChart = new Chart(myChart, {
         // maintainAspectRatio: false,
         title: {
             display: true,
-            text: 'Population growth (millions): Europe & Africa'
+            text: 'Hours spent every week'
         },
         legend: {
             display: true

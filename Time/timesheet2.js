@@ -154,7 +154,8 @@ function startAgain() {
     console.log(seconds, minutes)
     let timer = setInterval(() => {
         seconds++;
-        if (seconds > 60) {
+        if (seconds > 59) {
+
             minutes++;
             seconds = 1
         }
