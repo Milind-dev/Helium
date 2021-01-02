@@ -2,7 +2,7 @@
 Harvest offers time tracking, invoicing, expense tracking, and time-based reporting. Users can send automated payment reminders from the software if clients haven't paid an invoice on time. This is a "less stressful option for managers who hate dunning their customers."
 In this project we have tried to clone the website. We have implemented all the technologies that we have learnt in masai school till now. With much of our efforts we have clone the front-end part and added the functionality.
 
-# Technology Used
+# Technologies Used:
 
  - HTML 5
  - CSS 3
