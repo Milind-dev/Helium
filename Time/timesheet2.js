@@ -155,6 +155,7 @@ function startAgain() {
     let timer = setInterval(() => {
         seconds++;
         if (seconds > 59) {
+
             minutes++;
             seconds = 1
         }
