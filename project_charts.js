@@ -91,7 +91,7 @@ let minutesGraphData = setInterval(() => {
         document.getElementById("project__graph__dynamic__time").innerText = `0.0${minutes}`;
         document.getElementById("project__graph__dynamic__time__nonBillable").innerText = `0.0${minutes}`;
     }
-}, 1000 * 60)
+}, 1000)
 
 
 

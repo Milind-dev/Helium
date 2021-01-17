@@ -121,7 +121,7 @@ function startTimer() {
     let minutes = 0;
     let timer = setInterval(() => {
         seconds++;
-        if (seconds > 60) {
+        if (seconds > 59) {
             minutes++;
             seconds = 1;
             localStorage.setItem("minutes", minutes);
